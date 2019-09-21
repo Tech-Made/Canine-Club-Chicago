@@ -12,11 +12,7 @@ require('./data/canine-club-chicago-db');
 const cors = require('cors')
 
 // view engine setup
-// app.set('views', path.join(__dirname, 'views'));
-
-process.env.PWD = process.cwd();
-// app.set('views', path.join(process.env.PWD, 'public'));
-app.use(express.static(path.join(process.env.PWD, 'public')));
+app.set('views', path.join(__dirname, 'views'));
 
 app.engine('hbs', exphbs({
     defaultLayout: "main",
@@ -24,8 +20,9 @@ app.engine('hbs', exphbs({
     helpers: require("handlebars-helpers")(),
     layoutsDir: __dirname + '/views/layouts/',
     partialsDir: __dirname + '/views/partials/'
-}));
+  }));
 app.set('view engine', 'hbs');
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(logger('dev'));
 app.use(express.json());

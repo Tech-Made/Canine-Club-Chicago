@@ -1,0 +1,139 @@
+/* bootstrap tabs*/
+.nav-tabs {
+  border-bottom: none;
+  position: relative;
+  z-index: 1;
+  &.aside-tab{
+    @media (max-width: 1200px) and (min-width: 992px){
+      display: flex;
+      flex-direction: column;
+      .nav-item:not(:first-child){
+        .nav-link{
+          border-radius: unset;
+        }
+      }
+    }
+  }
+  @media(max-width:768px){
+    display: flex;
+    flex-direction: column;
+    .nav-item:not(:first-child){
+      .nav-link{
+        border-radius: unset;
+      }
+    }
+  }
+  .nav-item:last-child{
+    .nav-link{
+      margin-right: 0;
+    }
+  }
+  .nav-link {
+    border-radius: 35px 35px 0 0;
+    border: 3px solid $colorMain;
+    margin-right: 2px;
+    color: $colorMain !important;
+    font-size: 14px;
+    font-weight: bold;
+    &:hover {
+      border-color: $colorMain !important;
+      background: $colorMain;
+      color: $lightColor !important;
+    }
+    @media(max-width:768px){
+      padding: 15px 35px 15px;
+      margin-right: 0;
+    }
+  }
+
+  .nav-item.show .nav-link,
+  .nav-link.active {
+    border-color: $colorMain !important;
+    background: $colorMain;
+    color: $lightColor !important;
+  }
+
+  &.small-section{
+    @media (max-width: 1299px) and (min-width: 992px) {
+      display: flex;
+      flex-direction: column;
+      .nav-item{
+        display: flex;
+        flex-direction: column;
+        .nav-link{
+          margin-right: 0;
+        }
+        &:not(:first-child){
+          .nav-link{
+            border-radius: unset;
+          }
+        }
+      }
+    }
+  }
+}
+
+.nav-link {
+  @include small-text();
+  font-family: 'Montserrat', sans-serif;
+  padding: 25px 35px;
+  @media(max-width: 768px){
+    min-width: 100px;
+  }
+  @media(max-width:450px){
+
+    min-width: auto;
+    width: 100%;
+    display: block;
+  }
+  min-width: 180px;
+  color: $darkgreyColor;
+  .small-tabs & {
+    text-transform: uppercase;
+    padding: 20px 20px;
+    min-width: 8.1em;
+    color: $colorMain !important;
+  }
+}
+
+.small-tabs{
+  .tab-content{
+    &::before{
+      height: 3px;
+    }
+  }
+}
+
+.tab-content {
+  background-color: transparent;
+  padding: 62px 60px 50px 60px;
+  box-shadow: $boxShadow;
+  position: relative;
+  &::before{
+    position: absolute;
+    content: '';
+    height: 6px;
+    background-color: $colorMain;
+    top: -2px;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  @media(max-width:450px){
+    padding: 30px;
+  }
+}
+
+.tab-pane {
+  .media {
+    img {
+      max-width: 40%;
+      &:first-child {
+        margin-right: 10px;
+      }
+    }
+    h3, h4, h5 {
+      font-weight: 900;
+    }
+  }
+}

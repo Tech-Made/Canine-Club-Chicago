@@ -1,0 +1,156 @@
+/* bootstrap collapse*/
+//unstyled
+[data-toggle="collapse"] {
+  display: inline-block;
+  position: relative;
+  padding-right: 20px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  &{
+    font-size: 20px;
+  }
+  &:after {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -7px;
+
+    font-size: 10px;
+    font-family: 'FontAwesome';
+    content: "\f078";
+  }
+  &.collapsed {
+    &:after {
+      content: "\f054";
+    }
+  }
+}
+
+//cards as tabs
+[role="tablist"] {
+  .card {
+    border-radius: 0;
+    border: none;
+    background: none;
+    margin-bottom: 22px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+    .card-body{
+      box-shadow: $boxShadow;
+    }
+  }
+
+  .card-body-unstyled{
+    padding: 0 40px 18px 40px;
+  }
+  .card-header {
+    padding: 0;
+    background: none;
+    border: none;
+    &:hover{
+      background-color: #54c1c4;
+    }
+    a {
+      font-size: 20px;
+      line-height: 1;
+      display: block;
+      padding: 24px 45px 24px 30px;
+      margin: 0;
+      background-color: #54c1c4;
+      border: none;
+      color: $lightColor;
+      word-wrap: break-word;
+      i{
+        margin-right: 25px;
+        font-size: 14px;
+        color: $lightColor;
+      }
+      &:before,
+      &:after {
+        text-align: center;
+        font-family: inherit;
+        font-weight: 100;
+        content: '';
+        width: 68px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        color: $lightColor;
+        background-color: transparent;
+        transition: opacity 0.3s ease-in-out;
+      }
+      &:after {
+        font-weight: bold;
+        height: 30px;
+        line-height: 30px;
+        margin-top: -17px;
+        font-size: 38px;
+        vertical-align: top;
+        top: 50%;
+        bottom: auto;
+        content: '-';
+        background: none;
+        color: $lightColor;
+      }
+      &:not(.btn):hover {
+
+        color: $lightColor;
+        &:before,
+        &:after {
+         color:$lightColor;
+        }
+        i{
+          color:$lightColor;
+        }
+      }
+      &.collapsed {
+        background-color: #f3f4f4;
+        color: $darkgreyColor;
+        i{
+          color:$colorMain;
+        }
+        &:after {
+          content: '+';
+          margin-top: -15px;
+          font-size: 20px;
+          color: #54c1c4;
+        }
+        &:hover{
+          color: $lightColor;
+          background-color: #54c1c4;
+          i{
+            color:$lightColor;
+          }
+          &:after{
+            color: $lightColor;
+          }
+        }
+      }
+    }
+  }
+
+  [role="tab"] {
+    a{
+      display: block;
+    }
+  }
+  .card-body {
+    padding: 34px 20px 32px 39px;
+    background-color: transparent;
+  }
+  .media img {
+    max-width: 80px;
+  }
+}
+#accordion02{
+  .card-body{
+    margin-bottom: 0px;
+  }
+}
+.ds.ms{
+  [role="tablist"] .card-header a.collapsed{
+    background-color: $darkgreyColor;
+  }
+}

@@ -1,0 +1,27 @@
+/* widget_tag_cloud */
+.widget_tag_cloud {
+  .widget-title{
+    margin-bottom: 37px;
+  }
+  a {
+    background-color: $greyColor;
+    color: $darkgreyColor;
+    border-radius: 25px;
+    padding: 12px 30px;
+    margin: 0 0 10px 0;
+    display: inline-block;
+    span{
+      color: $colorMain;
+      margin-left: 7px;
+    }
+    @include small-text();
+    &:not(.btn):hover {
+      background-color: $colorMain;
+      color: $lightColor;
+      span{
+        color:$lightColor;
+      }
+    }
+  }
+
+}

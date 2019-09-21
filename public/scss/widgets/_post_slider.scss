@@ -1,0 +1,43 @@
+/*.widget_slider*/
+
+.widget_slider {
+  .entry-meta{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba($darkgreyColor, .7);
+    margin-bottom: 0;
+    justify-content: center;
+    .entry-date{
+      padding: 11px;
+      position: relative;
+      z-index: 2;
+      a{
+        color: $lightColor;
+      }
+    }
+  }
+  h5:first-child {
+    font-family: "Poppins", sans-serif;
+    text-transform: none;
+    font-weight: 400;
+    line-height: 19px;
+    margin: 0px 0 5px;
+    color: $lightColor;
+    line-height: 30px;
+  }
+  .vertical-item .item-media + .item-content{
+    padding: 35px 38px;
+  }
+  .cat-links {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: -4px;
+  }
+  h4{
+    letter-spacing: 0.3px;
+    line-height: 1.3;
+  }
+}

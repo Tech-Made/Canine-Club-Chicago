@@ -1,0 +1,134 @@
+/*
+** Buttons
+ */
+.btn:hover {
+  cursor: pointer;
+}
+form{
+  .btn +.btn{
+    margin-left: 20px;
+    @media(max-width: 394px){
+      margin-left: 0;
+
+    }
+    @media(max-width: 374px){
+      margin-top: 20px;
+
+    }
+  }
+}
+.btn.focus,
+.btn:focus {
+  box-shadow: 0 0 3px 0 rgba(100, 100, 100, .75);
+}
+
+.btn-secondary {
+  border-color: $borderColor;
+  color: $darkgreyColor;
+}
+
+/*color background buttons*/
+.btn-maincolor,
+.btn-maincolor2,
+.btn-maincolor3,
+.btn-darkgrey,
+.btn-maincolor4{
+  color: $lightColor;
+  padding: 27px 15px;
+  border-radius: 35px;
+}
+
+.btn-maincolor {
+  background-color: $colorMain;
+  border: 3px solid $colorMain;
+  &:hover{
+    background-color: transparent;
+    color: $colorMain;
+  }
+}
+
+.btn-maincolor2 {
+  background-color: $colorMain2;
+  border: 3px solid $colorMain2;
+  &:hover{
+    background-color: transparent;
+    color: $colorMain2;
+  }
+}
+
+.btn-maincolor3 {
+  background-color: $colorMain3;
+  border: 3px solid $colorMain3;
+  &:hover{
+    background-color: transparent;
+    color: $colorMain3;
+  }
+}
+
+.btn-maincolor4 {
+  background-color: $colorMain4;
+  border: 3px solid $colorMain4;
+  &:hover{
+    background-color: transparent;
+    color: $colorMain4;
+  }
+}
+
+.btn-darkgrey {
+  background-color: $darkgreyColor;
+  border: 3px solid $darkgreyColor;
+  &:hover{
+    background-color: transparent;
+    color: $darkgreyColor;
+  }
+}
+
+/*color outline buttons*/
+.btn-outline-maincolor,
+.btn-outline-maincolor2,
+.btn-outline-maincolor3,{
+  background-color:transparent;
+  color: $lightColor;
+  border: 3px solid $colorMain;
+  padding: 27px 15px;
+  border-radius: 35px;
+}
+
+.btn-outline-maincolor {
+  color: $colorMain;
+  border-color: $colorMain;
+  &:hover{
+    color: $lightColor;
+    background-color: $colorMain;
+  }
+}
+
+.btn-outline-maincolor2 {
+  color: $colorMain2;
+  border-color: $colorMain2;
+  &:hover{
+    color: $lightColor;
+    background-color: $colorMain2;
+  }
+}
+
+.btn-outline-maincolor3 {
+  color: $colorMain3;
+  border-color: $colorMain3;
+  &:hover{
+    color: $lightColor;
+    background-color: $colorMain3;
+  }
+}
+
+.btn-outline-darkgrey {
+  background-color: transparent;
+  border: 3px solid $darkgreyColor;
+  padding: 27px 15px;
+  border-radius: 35px;
+  color: $darkgreyColor;
+  &:hover{
+    color: $lightColor;
+    background-color: $darkgreyColor;
+  }
+}

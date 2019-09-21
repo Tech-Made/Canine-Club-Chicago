@@ -1,0 +1,296 @@
+/*
+** Widgets
+*/
+aside h2 {
+  margin-bottom: 0;
+  line-height: 1;
+}
+
+aside > * + * {
+  margin-top: 53px;
+}
+.page_footer{
+  .widget-title{
+    text-align: center;
+  }
+}
+.widget {
+  position: relative;
+  & > h3,
+  .widget-title {
+    @include widget-title();
+  }
+
+  //for shortcodes demo
+  & > h2:last-child {
+    line-height: 1;
+  }
+
+  //our custom widgets with bootstrap .media element
+  .list-unstyled{
+    li.media{
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+  li.media {
+    margin-bottom: 10px;
+    background-color: transparent;
+    padding-right: 10px;
+    overflow: hidden;
+
+    &:last-child{
+      margin-bottom: 0;
+    }
+
+    * + .media-body, .media-body + *{
+      margin-left: 22px;
+    }
+
+    img {
+      max-width: 100px;
+      height: 100px;
+    }
+    h3, h4 {
+      font-size: 16px;
+      //font-family: 'Abril Fatface', cursive;
+      font-family: "Montserrat", sans-serif;
+      text-transform: none;
+      font-weight: 500;
+      line-height: 19px;
+      margin: 0 0 10px;
+      overflow: hidden;
+      a{
+        color: $darkgreyColor;
+        &:hover{
+          color: $colorMain;
+        }
+      }
+    }
+    p {
+      line-height: 1.4;
+      margin-bottom: 0.5em;
+      font-size: 14px;
+      color: $colorMain4;
+    }
+  }
+
+  .page_footer & {
+    margin-bottom: 26px;
+    & > h3,
+    .widget-title {
+      margin-bottom: 1.9em;
+    }
+  }
+}
+
+.widget-title.next-image-background {
+  position: relative;
+  z-index: 2;
+  & + img {
+    position: absolute;
+    left: 0;
+    top: -15px;
+    opacity: 0.5;
+  }
+  .text-center & + img {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media(max-width: 991px) {
+  aside {
+    margin: 60px auto;
+    max-width: 500px;
+  }
+}
+
+/* affix-aside */
+.affix-aside {
+  position: relative;
+  &.affix {
+    position: fixed;
+    //oriented header height
+    top: 100px;
+  }
+  &.affix-bottom {
+    position: absolute !important;
+  }
+  &.affix-top {
+    width: inherit !important;
+    left: auto !important;
+  }
+
+  @media(max-width: 991px) {
+    &,
+    &.affix-top,
+    &.affix,
+    &.affix-bottom {
+      position: static !important;
+      width: 100% !important;
+    }
+  }
+}
+
+//p.stars removed
+.stars {
+  & > span {
+    display: flex;
+  }
+
+  a {
+    position: relative;
+    width: 1em;
+    color: transparent;
+    text-indent: -999em;
+
+    &:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 1em;
+      height: 1em;
+      line-height: 1;
+      text-indent: 0;
+      font-family: 'FontAwesome';
+    }
+    &:before,
+    &:hover ~ a:before {
+      color: $fontColor;
+      content: "\f006"
+    }
+  }
+  &.selected a.active:before,
+  &:hover a:before {
+    content: "\f005";
+    color: $colorMain;
+    opacity: 1;
+  }
+  &.selected {
+    a.active ~ a:before {
+      content: "\f005";
+      color: $fontColor;
+      opacity: .75
+    }
+    a:not(.active):before {
+      content: "\f005";
+      color: $colorMain;
+      opacity: 1
+    }
+  }
+}
+
+.star-rating {
+  overflow: hidden;
+  position: relative;
+  height: 1em;
+  line-height: 1;
+  font-size: 14px;
+  width: 5em;
+  letter-spacing: 0.1em;
+  font-family: 'FontAwesome';
+  color: $colorMain;
+
+  &:before {
+    content: '\f006\f006\f006\f006\f006';
+    color: $colorMain;
+    float: left;
+    top: 0;
+    left: 0;
+    position: absolute
+  }
+
+  span {
+    overflow: hidden;
+    float: left;
+    top: 0;
+    left: 0;
+    position: absolute;
+    padding-top: 1.5em;
+
+    &:before {
+      content: '\f005\f005\f005\f005\f005';
+      top: 0;
+      position: absolute;
+      left: 0
+    }
+
+  }
+}
+
+.ds{
+  .widget_twitter{
+    .twitter-item{
+      .media{
+        .media-body{
+          a{
+            color: $colorMain;
+            &:hover{
+              color: $lightColor!important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.widget_twitter{
+  .widget-title{
+    margin-bottom: 30px;
+  }
+  .twitter-item{
+    .fa{
+      color: #55acee;
+      font-size: 14px;
+    }
+    .media{
+      align-items: flex-start;
+      * + .media-body{
+        margin-left: 7px;
+      }
+      .icon-styled{
+        margin-top: 0;
+      }
+      .media-body{
+        & > p{
+          margin: 0;
+          & + a{
+            display: inline-block;
+            margin-top: 2px;
+          }
+        }
+        a{
+          color: $colorMain;
+          font-weight: 500;
+          &:hover{
+            color: $darkgreyColor!important;
+          }
+        }
+      }
+      & + .media{
+        margin-top: 17px;
+      }
+    }
+  }
+}
+
+.widget + .widget_popular_entries{
+  .widget-title{
+    margin-top: -5px;
+  }
+}
+
+@import 'widgets/search_mailchimp';
+@import 'widgets/nav_cat_arch_meta_pages';
+@import 'widgets/calendar';
+@import 'widgets/rss';
+@import 'widgets/tag_cloud';
+@import 'widgets/flickr';
+@import 'widgets/instagram';
+@import 'widgets/access_press';
+@import 'widgets/twitter';
+@import 'widgets/post_slider';
+@import 'widgets/post_tabs';
+@import 'widgets/post_2cols';

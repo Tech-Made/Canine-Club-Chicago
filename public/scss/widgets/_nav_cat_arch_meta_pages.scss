@@ -1,0 +1,256 @@
+/*
+widget_archive
+widget_categories
+widget_nav_menu
+widget_meta
+widget_pages
+widget_recent_comments
+widget_recent_entries
+*/
+
+aside{
+  .widget_archive,
+  .widget_categories,
+    //widget pages has following div inside:
+  .widget_nav_menu,
+    //.menu-all-pages-container,
+  .widget_meta,
+  .widget_pages,
+  .widget_recent_comments,
+  .widget_recent_entries{
+    .widget-title{
+      margin-bottom: 29px;
+    }
+  }
+}
+.widget_archive,
+.widget_categories,
+  //widget pages has following div inside:
+.widget_nav_menu,
+  //.menu-all-pages-container,
+.widget_meta,
+.widget_pages,
+.widget_recent_comments,
+.widget_recent_entries {
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 100%;
+    ul {
+      li {
+        padding-left: 20px;
+        border-top: 1px solid $borderColor;
+        border-bottom: none;
+        &:last-child {
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+  li {
+
+
+  }
+  li + li {
+    border-top: none;
+  }
+  //fix for unit test
+  //empty menu item
+  a:empty,
+  li > a:not([href]) {
+    display: none !important;
+  }
+}
+
+aside{
+  .widget_archive,
+  .widget_categories,
+    //widget pages has following div inside:
+  .widget_nav_menu,
+    //.menu-all-pages-container,
+  .widget_meta,
+  .widget_pages{
+    & > ul{
+      margin-top: -8px;
+    }
+  }
+}
+
+.widget_archive,
+.widget_categories,
+  //widget pages has following div inside:
+.widget_nav_menu,
+  //.menu-all-pages-container,
+.widget_meta,
+.widget_pages {
+  li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    color: $colorMain;
+    font-size: 18px;
+    line-height: 30px;
+    border-bottom: 1px solid $borderColor;
+    a {
+      flex-grow: 10;
+      display: inline-block;
+      padding: 9px 0;
+      position: relative;
+    }
+
+    & > a:before {
+      @include widget-a-before();
+    }
+  }
+}
+
+.widget_recent_comments{
+  li {
+    flex-grow: 10;
+    display: inline-block;
+    padding: 9px 0;
+    position: relative;
+    border-bottom: 1px solid $borderColor;
+    span{
+    }
+    &::before {
+      @include widget-a-before();
+    }
+  }
+}
+
+.widget_recent_entries {
+  li {
+    flex-grow: 10;
+    display: inline-block;
+    padding: 9px 0;
+    border-bottom: 1px solid $borderColor;
+    &::before {
+      @include widget-a-before();
+    }
+  }
+}
+
+//recent entries in footer
+.page_footer{
+  &.ds{
+    .social-icons{
+      a.fa:hover{
+        //background-color: $lightColor;
+      }
+    }
+  }
+  .widget{
+    h3.widget-title{
+      font-size: 32px;
+      margin-bottom: 0.7em;
+      line-height: 0.9;
+      text-align: left;
+      @media (max-width: 991px) {
+        text-align: center;
+      }
+      @media (max-width: 575px) {
+        margin-bottom: 30px;
+      }
+    }
+    li.media{
+      margin-bottom: 21px;
+    }
+  }
+  .widget_icons_list{
+    font-weight: 400;
+    .icon-inline + .icon-inline{
+      margin-top: 10px;
+    }
+    .social-icons{
+      margin-top: 20px;
+      display: inline-block;
+    }
+  }
+}
+
+//nav menu in topline and copyright
+.page_copyright, .page_topline {
+  .widget_nav_menu li {
+    display: inline-block;
+    position: relative;
+    border: none;
+    padding-right: 5px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .widget_nav_menu li:before {
+    content: '';
+    position: absolute;
+    padding: 0;
+    left: -5px;
+    top: 5px;
+    bottom: 5px;
+    width: 1px;
+    background-color: $borderColorRGBA;
+    opacity: 0.3;
+    display: block;
+  }
+  .widget_nav_menu li:first-child:before {
+    display: none;
+  }
+  .widget_nav_menu a {
+    padding: 0 10px;
+  }
+  .widget_nav_menu a:before {
+    display: none;
+  }
+}
+
+//dropdown lists
+.widget_categories,
+.widget_archive {
+  select {
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid $borderColor;
+    border-radius: 3px;
+    color: $fontColor;
+    font-size: 14px;
+    font-weight: bold;
+    &:focus, &:active{
+      background-color: transparent;
+    }
+  }
+}
+
+//Widget Slider
+.widgets-title{
+  font-size: 20px;
+  text-transform: initial;
+  a:hover{
+    color: $colorMain;
+  }
+}
+
+//Media
+.widget{
+  .media{
+    display: flex;
+    align-items: center;
+    .media-body{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex-grow: 1;
+      .item-meta{
+        margin-bottom: 0;
+      }
+    }
+    h4{
+      max-height: 38px;
+    }
+  }
+}
+
+.widget_text{
+  .widget-title{
+    margin-bottom: 30px;
+  }
+}

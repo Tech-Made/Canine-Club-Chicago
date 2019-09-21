@@ -1,0 +1,20 @@
+.testimonial{
+  padding-left: 100px;
+  position: relative;
+  text-align: left;
+  margin-bottom: 0;
+  img{
+    position: absolute;
+    top: -22px;
+    left: 0;
+    max-width: 80px;
+    border-radius: 50%;
+  }
+  h5{
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+  .type{
+    margin-bottom: 8px;
+  }
+}

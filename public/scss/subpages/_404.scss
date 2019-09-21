@@ -1,0 +1,91 @@
+/*
+** 404
+*/
+
+.error-404 {
+  min-height: calc(100vh - 150px);
+  .page-header {
+    text-align: center;
+    @media (min-width: 768px) {
+      text-align: left;
+    }
+    h3 {
+      font-size: 100px;
+      line-height: 1;
+      margin: 0;
+      color: $colorMain;
+      @media (min-width: 992px) {
+        font-size: 240px;
+        line-height: 168px;
+        margin-bottom: 35px;
+      }
+    }
+    p {
+      font-size: 30px;
+      color: $darkgreyColor;
+      font-weight: 400;
+      letter-spacing: -0.3px;
+      @media (max-width: 767px) {
+        font-size: 24px;
+        text-align: center;
+      }
+    }
+  }
+
+  .page-content{
+    padding-top: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #f0f7fa;
+    @media (min-width: 768px) {
+      align-items: center;
+    }
+    @media (max-width: 768px) {
+      color: #fff;
+    }
+    span{
+      font-size: 16px;
+      font-weight: 400;
+      color: $fontColor;
+    }
+  }
+
+  .widget_mailchimp {
+    margin: 19px 0 32px 0;
+    form{
+      input{
+        height: 50px;
+        background-color: transparent;
+        border: 1px solid $darkgreyColor;
+        color: $darkgreyColor;
+        &::placeholder{
+          color: $darkgreyColor;
+        }
+      }
+      button::before{
+        content: '\f002';
+        color: $darkgreyColor;
+      }
+      @media (min-width: 480px){
+        width: 370px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      background: transparent;
+      width: 100%;
+      input{
+        width: 100%;
+      }
+    }
+  }
+  .btn {
+    width: 200px;
+    margin-right: 0;
+  }
+
+  .divider_or{
+    margin-bottom: 14px;
+  }
+}

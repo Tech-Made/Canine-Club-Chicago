@@ -1,0 +1,44 @@
+/*.widget_post_tabs*/
+
+.widget_post_tabs {
+  .tab-content{
+    padding: 40px 40px 33px;
+  }
+  h4:first-child {
+    font-size: 18px;
+    font-family: 'Abril Fatface', cursive;
+    text-transform: none;
+    font-weight: 500;
+    line-height: 25px;
+    margin: 0px 0 5px;
+    color: $darkgreyColor;
+  }
+  .entry-meta{
+    padding: 11px 18px;
+    margin-bottom: 0;
+    background: rgba($darkgreyColor, .7);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: flex-start;
+    i{
+      margin-right: 8px;
+    }
+    .entry-date{
+      a{
+        color: $lightColor;
+      }
+    }
+
+  }
+  .vertical-item {
+    margin-bottom:1.8em;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    .item-content{
+      padding: 25px 0 0 0;
+    }
+  }
+}

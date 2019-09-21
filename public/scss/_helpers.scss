@@ -1,0 +1,67 @@
+/*
+** Helper Utilities
+*/
+@import 'helpers/helpers_layout';
+@import 'helpers/helpers_colors';
+@import 'helpers/helpers_spacing';
+
+.border-top-color{
+  border-top: 1px solid #54686c;
+}
+
+.faq-links{
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.medium{
+  font-weight: 500;
+}
+
+.back-bg{
+  background: url("../images/back_bg.jpg") repeat center / cover;
+}
+
+.back-bg2{
+  background: url("../images/back_bg_2.jpg") repeat center / cover;
+}
+
+.tm{
+  position: relative;
+  &::after{
+    content: 'TM';
+    position: absolute;
+    font-family: 'Montserrat', serif;
+    font-size: 8px;
+    top: 0;
+    right: -12px;
+    color: $fontColor;
+  }
+}
+
+.semibold{
+  font-weight: 400;
+}
+
+.w-60{
+  width: 60%;
+}
+
+.icon-styled.fs-80{
+  font-size: 70px;
+  width: 2.1em!important;
+  height: 2.1em!important;
+  i.fa{
+    line-height: 2.1px!important;
+  }
+  @media (max-width: 991px) {
+    font-size: 50px;
+    width: 1.8em!important;
+    height: 1.8em!important;
+    i.fa{
+      line-height: 1.8em!important;
+    }
+  }
+}
+
