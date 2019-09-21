@@ -22,6 +22,7 @@ app.engine('hbs', exphbs({
     partialsDir: __dirname + '/views/partials/'
 }));
 app.set('view engine', 'hbs');
+process.env.PWD = process.cwd();
 app.use(express.static(process.cwd() + '/public'));
 
 app.use(logger('dev'));
