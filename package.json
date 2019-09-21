@@ -1,7 +1,7 @@
 {
   "name": "canine-club-chicago",
   "version": "1.0.0",
-  "description": "html template",
+  "description": "Canine Club Chicago website",
   "main": "gulpfile.js",
   "keywords": [
     "template",
