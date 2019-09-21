@@ -12,9 +12,11 @@ require('./data/canine-club-chicago-db');
 const cors = require('cors')
 
 // view engine setup
-app.set('views', path.join(__dirname, 'views'));
+// app.set('views', path.join(__dirname, 'views'));
+
 process.env.PWD = process.cwd();
-app.use(express.static(process.cwd() + 'public'));
+// app.set('views', path.join(process.env.PWD, 'public'));
+app.use(express.static(path.join(process.env.PWD, 'public')));
 
 app.engine('hbs', exphbs({
     defaultLayout: "main",
