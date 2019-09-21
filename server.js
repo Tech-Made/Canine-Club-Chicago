@@ -23,7 +23,7 @@ app.engine('hbs', exphbs({
 }));
 app.set('view engine', 'hbs');
 process.env.PWD = process.cwd();
-app.use(express.static(process.cwd() + '/public'));
+app.use(express.static(process.cwd() + 'public'));
 
 app.use(logger('dev'));
 app.use(express.json());
