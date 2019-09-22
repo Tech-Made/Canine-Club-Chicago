@@ -1,0 +1,550 @@
+.<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+	<title>Venator</title>
+	<meta charset="utf-8">
+	<!--[if IE]>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<![endif]-->
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/animations.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/main.css" class="color-switcher-link">
+	<script src="js/vendor/modernizr-custom.js"></script>
+
+	<!--[if lt IE 9]>
+		<script src="js/vendor/html5shiv.min.js"></script>
+		<script src="js/vendor/respond.min.js"></script>
+		<script src="js/vendor/jquery-1.12.4.min.js"></script>
+	<![endif]-->
+
+</head>
+
+<body>
+	<!--[if lt IE 9]>
+		<div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="color-main">upgrade your browser</a> to improve your experience.</div>
+	<![endif]-->
+
+	<div class="preloader">
+		<div class="preloader_image pulse"></div>
+	</div>
+
+	<!-- search modal -->
+	<div class="modal" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal">
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		</button>
+		<div class="widget widget_search">
+			<form method="get" class="searchform search-form" action="/">
+				<div class="form-group">
+					<input type="text" value="" name="search" class="form-control" placeholder="Search keyword" id="modal-search-input">
+				</div>
+				<button type="submit"></button>
+			</form>
+		</div>
+	</div>
+
+	<!-- Unyson messages modal -->
+	<div class="modal fade" tabindex="-1" role="dialog" id="messages_modal">
+		<div class="fw-messages-wrap ls p-normal">
+			<!-- Uncomment this UL with LI to show messages in modal popup to your user: -->
+			<!--
+		<ul class="list-unstyled">
+			<li>Message To User</li>
+		</ul>
+		-->
+
+		</div>
+	</div><!-- eof .modal -->
+
+	<!-- wrappers for visual page editor and boxed version of template -->
+	<div id="canvas">
+		<div id="box_wrapper">
+
+			<!-- template sections -->
+
+
+        <section class="page_toplogo ls s-pt-45 s-pb-40 d-none d-lg-block">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-lg-3">
+                        <div class="">
+                            <a href="./" class="logo">
+                                {{!-- <img src="images/logo.png" alt="img"> --}}
+                                <h3>The Canine Club of Chicago</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="d-flex justify-content-center">
+                            <div class="media header-media">
+                                <div class="media-body">
+                                    <h4>
+                                        mail us
+                                    </h4>
+                                    <p>
+                                        <a href="mailto:info@canineclubchicago.com">info@canineclubchicago.com</a>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="media header-media">
+                                <div class="media-body">
+                                    <h4>
+                                        working ours
+                                    </h4>
+                                    <p>
+                                        7AM - 10PM
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="media header-media">
+                                <div class="media-body">
+                                    <h4>
+                                        call us
+                                    </h4>
+                                    <p>
+                                        <a href="tel:0-800-321-654">1-630-999-5222</a>
+                                    </p>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="col-lg-3 text-right">
+                        <a href="#" class="btn btn-maincolor">book training</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!--eof topline-->
+        <!-- header with two Bootstrap columns - left for logo and right for navigation and includes (search, social icons, additional links and buttons etc -->
+        <header class="page_header ls bg-maincolor4 main-style">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-xl-12">
+                        <div class="nav-wrap header-main">
+                            <a href="./" class="logo logo-ds">
+                                {{!-- <img src="images/logo_ds.png" alt="img"> --}}
+                                <h5>The Canine Club of Chicago</h5>
+                            </a>
+                            <!-- main nav start -->
+                            <nav class="top-nav">
+                                <ul class="nav sf-menu">
+
+                                    <!-- sof pages -->
+                                    <li>
+                                        <a href="/">Home</a>
+                                    </li>
+
+                                    <li class="active">
+                                        <a>About</a>
+                                        <ul>
+                                            <li>
+                                                <a href="/facility">Our Facility</a>
+                                            </li>
+                                            <li>
+                                                <a href="/mission">Our Mission</a>
+                                            </li>
+                                            <li class="active">
+                                                <a href="/team">Our Team</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <a>Services</a>
+                                        <ul>
+                                            <li>
+                                                <a href="/training">Training 1</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <!-- eof pages -->
+
+
+                                </ul>
+
+
+                            </nav>
+                            <!-- eof main nav -->
+                            <span class="mr-5">
+                                <a href="#" class="search_modal_button hidden-below-xl">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </span>
+                            <ul class="top-includes d-none d-xl-block">
+                                <li>
+                                    <span class="social-icons">
+
+                                        <a href="#" class="fa fa-twitter border-icon rounded-icon color-icon" title="twitter"></a>
+                                        <a href="#" class="fa fa-google border-icon rounded-icon color-icon" title="google"></a>
+                                        <a href="#" class="fa fa-facebook border-icon rounded-icon color-icon" title="facebook"></a>
+                                        <a href="#" class="fa fa-linkedin border-icon rounded-icon color-icon" title="linkedin"></a>
+
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- header toggler -->
+            <span class="toggle_menu"><span></span></span>
+        </header>
+
+			<section class="page_title ls  s-py-5">
+				<div class="container">
+					<div class="row">
+
+						<div class="col-md-12 text-center">
+							<h1>Team</h1>
+							<ol class="breadcrumb">
+								<li class="breadcrumb-item">
+									<a href="./">Home</a>
+								</li>
+								<li class="breadcrumb-item">
+									<a href="#">Pages</a>
+								</li>
+								<li class="breadcrumb-item active">
+									<a href="/team">Team</a>
+								</li>
+							</ol>
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+			<section class="ls s-py-60 s-py-md-90 s-py-xl-160">
+				<div class="container">
+					<div class="row">
+
+						<div class="col-12 mb--5">
+							<div class="row c-gutter-60">
+
+								<div class="col-md-12 mb-60 col-lg-5">
+									<div class="team ls vertical-item content-padding text-center box-shadow">
+										<div class="item-media">
+											<img src="images/team/01.jpg" alt="img">
+											<div class="media-links">
+												<a class="abs-link" title="" href="team-single.html"></a>
+											</div>
+										</div>
+										<div class="item-content">
+											<h5>
+												<a href="team-single.html">Raza Zaidi</a>
+											</h5>
+
+											<p class="  color-main4">
+												Owner and Tranny Leader
+											</p>
+											<p>
+												Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu.
+											</p>
+											<p class="social-icons">
+
+												<a href="#" class="fa fa-facebook" title="facebook"></a>
+												<a href="#" class="fa fa-twitter" title="twitter"></a>
+												<a href="#" class="fa fa-google" title="google"></a>
+												<a href="#" class="fa fa-linkedin" title="linkedin"></a>
+
+											</p>
+
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-12 col-lg-7">
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+									</p>
+									<p>
+										Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+									</p>
+									<ul class="list-styled">
+										<li>
+											<a class="semibold" href="services.html">Lorem ipsum dolor sit</a>
+										</li>
+										<li>
+											<a class="semibold" href="services.html">Amet, consectetur</a>
+										</li>
+										<li>
+											<a class="semibold" href="services.html">Elit sed do eiusmod</a>
+										</li>
+
+									</ul>
+
+									<p>
+										Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+									</p>
+									<!-- tabs start -->
+									<ul class="nav nav-tabs aside-tab mt-50" role="tablist">
+										<li class="nav-item">
+											<a class="nav-link active" id="tab01" data-toggle="tab" href="#tab01_pane" role="tab" aria-controls="tab01_pane" aria-expanded="true">Biography</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" id="tab02" data-toggle="tab" href="#tab02_pane" role="tab" aria-controls="tab02_pane">Skills</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" id="tab03" data-toggle="tab" href="#tab03_pane" role="tab" aria-controls="tab03_pane">Send Message</a>
+										</li>
+
+									</ul>
+									<div class="tab-content mb-50">
+
+										<div class="tab-pane fade show active" id="tab01_pane" role="tabpanel" aria-labelledby="tab01">
+
+											<h5>Biography:</h5>
+											<p>
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+											</p>
+											<p>
+												Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.
+											</p>
+											<h5>Professional Life:</h5>
+											<p>
+												Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.
+											</p>
+											<p>
+												Et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione.
+											</p>
+
+										</div>
+
+										<div class="tab-pane fade" id="tab02_pane" role="tabpanel" aria-labelledby="tab02">
+
+											<p>
+												Dutem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat,
+												vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio
+												dignissim qui blandit. Praesent luptatum zzril delenit augue duis dolore te feugait
+												nulla facilisi.
+											</p>
+
+											<span class="progress-title">Skill name</span>
+											<div class="progress">
+												<div class="progress-bar bg-maincolor" role="progressbar" data-transitiongoal="90" aria-valuemin="0" aria-valuemax="100">
+													<span>90%</span>
+												</div>
+											</div>
+
+											<span class="progress-title">Skill name</span>
+											<div class="progress">
+												<div class="progress-bar bg-maincolor2" role="progressbar" data-transitiongoal="98" aria-valuemin="0" aria-valuemax="100">
+													<span>98%</span>
+												</div>
+											</div>
+
+											<span class="progress-title">Skill name</span>
+											<div class="progress">
+												<div class="progress-bar bg-maincolor3" role="progressbar" data-transitiongoal="93" aria-valuemin="0" aria-valuemax="100">
+													<span>93%</span>
+												</div>
+											</div>
+
+											<p><br>
+												Ut wisi enim ad minim veniaquis nostrud exetation ullamcorper suscipit lobortis nisl
+												ut aliquip ex ea commodo consequat. Dutem vel eum iriure dolor in hendrerit in
+												vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis
+												at vero eros et accumsan et iusto odio dignissim qui blandit.
+											</p>
+
+										</div>
+
+										<div class="tab-pane fade" id="tab03_pane" role="tabpanel" aria-labelledby="tab03">
+
+											<form class="contact-form form-inverse" method="post" action="/">
+												<p class="form-group">
+
+													<input type="text" aria-required="true" size="30" value="" name="name" class="form-control" placeholder="Name">
+												</p>
+												<p class="form-group">
+
+													<input type="email" aria-required="true" size="30" value="" name="email" class="form-control" placeholder="Email Address">
+												</p>
+												<p class="form-group">
+													<textarea aria-required="true" rows="8" cols="45" name="message" class="form-control" placeholder="Message"></textarea>
+												</p>
+												<p class="form-group buttons-group">
+													<button type="submit" name="contact_submit" class="btn btn-maincolor">Send Message
+													</button>
+												</p>
+											</form>
+
+										</div>
+
+									</div>
+									<!-- tabs end-->
+
+
+									<p>
+										Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam.
+									</p>
+
+									<blockquote class="vertical-item box-shadow text-left">
+
+										<h5 class="text-capitalize">Kathy D. Grayson</h5>
+										<p class="type color-main">
+											Client
+										</p>
+
+										<p>
+											After the first lesson there was already a huge improvment. Elvis was learning to walk by my side and not run off every time a person or dog walked passed us. She was also learning basic commands like stay and come which before I would of never thought possible.
+										</p>
+
+									</blockquote>
+
+									<p>
+										Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam voluptatem.
+									</p>
+
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+			<footer class="page_footer ds s-pb-35 s-pt-60 s-pb-md-70 s-pt-md-90 s-pb-xl-130 s-pt-xl-160 c-mb-20 c-gutter-30 container-px-0">
+
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-4 text-center text-lg-left animate" data-animation="fadeInUp">
+							<div class="widget widget_twitter">
+								<h3 class="widget-title">Twitter</h3>
+								<div class="twitter-item">
+									<div class="media">
+										<div class="icon-styled color-main fs-18">
+											<i class="fa fa-twitter" aria-hidden="true"></i>
+										</div>
+										<div class="media-body color_1">
+											<p>
+												Tamquam eligendi ex qui ex sea aliquam blandit has cum tacimates.
+											</p>
+											<a href="№">http://on.bcg.com/2enKlr7</a>
+										</div>
+									</div>
+									<div class="media">
+										<div class="icon-styled color-main fs-18">
+											<i class="fa fa-twitter" aria-hidden="true"></i>
+										</div>
+										<div class="media-body color_1">
+											<p>
+												Tamquam eligendi ex qui ex sea aliquam blandit has cum tacimates.
+											</p>
+											<a href="№">http://on.bcg.com/2enKlr7</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-4 text-center text-lg-left animate" data-animation="fadeInUp">
+
+							<div class="widget widget_icons_list">
+								<h3 class="widget-title">Our Contacts</h3>
+
+								<ul class="mb-10">
+									<li class="icon-inline">
+										<div class="icon-styled icon-top color-main4 fs-14">
+											<i class="fa fa-map-marker"></i>
+										</div>
+										<p>3112 Stonecoal Road Toledo, OH 43602</p>
+									</li>
+									<li class="icon-inline">
+										<div class="icon-styled icon-top color-main4 fs-14">
+											<i class="fa fa-envelope"></i>
+										</div>
+										<a href="#">canis@support.com</a>
+									</li>
+									<li class="icon-inline">
+										<div class="icon-styled icon-top color-main4 fs-14">
+											<i class="fa fa-phone"></i>
+										</div>
+										<p>0 (800) 321 654</p>
+									</li>
+									<li class="icon-inline">
+										<div class="icon-styled icon-top color-main4 fs-14">
+											<i class="fa fa-clock-o"></i>
+										</div>
+										<p>Working hours: 9.00 - 20.00 </p>
+									</li>
+								</ul>
+
+								<span class="social-icons">
+									<a href="#" class="fa fa-twitter  rounded-icon color-bg-icon footer-icon" title="twitter"></a>
+									<a href="#" class="fa fa-google  rounded-icon color-bg-icon footer-icon" title="google"></a>
+									<a href="#" class="fa fa-facebook  rounded-icon color-bg-icon footer-icon" title="facebook"></a>
+									<a href="#" class="fa fa-linkedin  rounded-icon color-bg-icon footer-icon" title="linkedin"></a>
+								</span>
+							</div>
+						</div>
+
+						<div class="col-lg-4 text-center text-lg-left animate" data-animation="fadeInUp">
+							<div class="widget mb-0">
+
+								<h3 class="widget-title">Newsletter</h3>
+
+								<p class="color-font mb-3">
+									Subscribe to our Newsletter to be updated,
+									we promise not to spam.
+								</p>
+
+								<form class="signup" action="/">
+
+									<input id="mailchimp_email" name="email" type="email" class="form-control mailchimp_email text-center text-lg-left" placeholder="Enter Email Address">
+
+									<button type="submit" class="btn btn-maincolor mt-30">
+										Subscribe
+									</button>
+									<div class="response"></div>
+								</form>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+
+			<section class="page_copyright ds s-py-5">
+				<div class="container border-top-color">
+					<div class="row align-items-center ">
+						<div class="divider-20 d-none d-lg-block"></div>
+						<div class="divider-10 d-none d-md-block d-lg-none"></div>
+						<div class="col-md-12 text-center">
+							<p>&copy; Copyright <span class="copyright_year">2018</span> All Rights Reserved</p>
+						</div>
+						<div class="divider-20 d-none d-lg-block"></div>
+						<div class="divider-10 d-none d-md-block d-lg-none"></div>
+					</div>
+				</div>
+			</section>
+
+
+		</div><!-- eof #box_wrapper -->
+	</div><!-- eof #canvas -->
+
+
+	<script src="js/compressed.js"></script>
+	<script src="js/main.js"></script>
+
+
+</body>
+
+</html>
