@@ -44,7 +44,8 @@
                     <div class="col-lg-3">
                         <div class="">
                             <a href="./" class="logo">
-                                <img src="images/logo.png" alt="img">
+                                {{!-- <img src="images/logo.png" alt="img"> --}}
+                                <h3>The Canine Club of Chicago</h3>
                             </a>
                         </div>
                     </div>
@@ -56,7 +57,7 @@
                                         mail us
                                     </h4>
                                     <p>
-                                        <a href="mailto:canis@support.com">canis@support.com</a>
+                                        <a href="mailto:info@canineclubchicago.com">info@canineclubchicago.com</a>
                                     </p>
                                 </div>
                             </div>
@@ -67,7 +68,7 @@
                                         working ours
                                     </h4>
                                     <p>
-                                        9.00 - 20.00
+                                        7AM - 10PM
                                     </p>
                                 </div>
                             </div>
@@ -78,7 +79,7 @@
                                         call us
                                     </h4>
                                     <p>
-                                        <a href="tel:0-800-321-654">0-800-321-654</a>
+                                        <a href="tel:0-800-321-654">1-630-999-5222</a>
                                     </p>
                                 </div>
                             </div>
@@ -93,7 +94,7 @@
                 </div>
             </div>
         </section>
-
+        <!--eof topline-->
         <header class="page_header ls bg-maincolor4 main-style">
             <div class="container-fluid">
                 <div class="row align-items-center">
@@ -112,7 +113,7 @@
                                         <a href="/">Home</a>
                                     </li>
 
-                                    <li>
+                                    <li >
                                         <a>About</a>
                                         <ul>
                                             <li>
@@ -127,13 +128,13 @@
                                         </ul>
                                     </li>
 
-                                    <li>
+                                    <li class="active">
                                         <a>Training</a>
                                         <ul>
                                             <li>
                                                 <a href="/bootcamp">Boot Camp</a>
                                             </li>
-                                            <li>
+                                            <li class="active">
                                                 <a href="/aggressioncamp">Aggression Camp</a>
                                             </li>
                                             <li>
@@ -149,7 +150,7 @@
                                         <a href="/boarding">Boarding</a>
                                     </li>
 
-                                    <li class="active">
+                                    <li>
                                         <a href="/contact">Contact</a>
                                     </li>
 
@@ -187,16 +188,16 @@
                 <div class="row">
 
                     <div class="col-md-12 text-center">
-                        <h1>Contact</h1>
+                        <h1>Aggression Camp</h1>
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item">
                                 <a href="./">Home</a>
                             </li>
                             <li class="breadcrumb-item">
-                                <a href="#">Pages</a>
+                                <a href="#">Training</a>
                             </li>
                             <li class="breadcrumb-item active">
-                                Contact
+                                Aggression Camp
                             </li>
                         </ol>
                     </div>
@@ -205,110 +206,33 @@
             </div>
         </section>
 
-        <section class="ls s-py-60 s-py-md-90 s-py-xl-160 c-mb-20">
+        <section class="ls s-py-60 s-py-md-90 s-py-xl-160 c-gutter-60 service">
             <div class="container">
-
-                <div class="row c-mb-30">
-                    <div class="col-lg-4 animate" data-animation="pullDown">
-                        <div class="icon-box text-center">
-                            <div class="icon-styled bg-maincolor4 round fs-80 mb-30">
-                                <i class="fa fa-mobile-phone"></i>
-                            </div>
-                            <h4>Call Us</h4>
-                            <p class="color-darkgrey">
-                                <strong>Team:</strong> +1 (630) 999 5 222<br>
-                            </p>
-                            <div class="mt--20"></div>
-                            {{!-- <p class="color-darkgrey">
-                                <strong>Support:</strong> 0 (800) 123 456
-                            </p> --}}
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 animate" data-animation="pullDown">
-                        <div class="icon-box text-center">
-                            <div class="icon-styled bg-maincolor round fs-80 mb-30">
-                                <i class="fa fa-pencil"></i>
-                            </div>
-                            <h4>Write Us</h4>
-                            <div class="mt-2"></div>
-                            <a href="mailto:info@canineclubchicago.com">info@canineclubchicago.com</a><br>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 animate" data-animation="pullDown">
-                        <div class="icon-box text-center">
-                            <div class="icon-styled bg-green round fs-80 mb-30">
-                                <i class="fa fa-map-marker"></i>
-                            </div>
-                            <h4>Visit Us</h4>
-                            <p class="color-darkgrey">
-                                5750 N Tripp Ave
-                            </p>
-                            <div class="mt--20"></div>
-                            <p class="color-darkgrey">
-                                Chicago, IL 60646
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="mt-120 hidden-below-xl"></div>
-                <div class="mt-60 hidden-below-md d-xl-none"></div>
-                <div class="mt-30"></div>
-
                 <div class="row">
 
-                    <div class="col-lg-12 animate mb-0" data-animation="scaleAppear">
-
-                        <form class="contact-form form-inverse c-mb-20 c-gutter-20" method="post" action="/">
-
-                            <div class="row">
-
-                                <div class="col-md-6">
-                                    <div class="form-group has-placeholder">
-                                        <label for="name">Full Name <span class="required">*</span></label>
-                                        <input type="text" aria-required="true" size="30" value="" name="name" id="name" class="form-control text-center" placeholder="Full Name">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group has-placeholder">
-                                        <label for="tel">Your Phone<span class="required">*</span></label>
-                                        <input type="tel" aria-required="true" size="30" value="" name="tel" id="tel" class="form-control text-center" placeholder="Your Phone">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group has-placeholder">
-                                        <label for="email">Email address<span class="required">*</span></label>
-                                        <input type="email" aria-required="true" size="30" value="" name="email" id="email" class="form-control text-center" placeholder="Email Address">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group has-placeholder">
-                                        <label for="subject">Subject<span class="required">*</span></label>
-                                        <input type="text" aria-required="true" size="30" value="" name="subject" id="subject" class="form-control text-center" placeholder="Your Subject">
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-group has-placeholder">
-                                        <label for="message">Message</label>
-                                        <textarea aria-required="true" rows="7" cols="45" name="message" id="message" class="form-control text-center" placeholder="Your Message"></textarea>
-                                    </div>
-                                </div>
+                    <div class="col-lg-12">
+                        <div>
+                            <div class="item-media">
+                                <img src="images/dog2.jpg" alt="img">
                             </div>
-                            <div class="row mt-3">
-                                <div class="col-sm-12">
-                                    <div class="form-group text-center">
-                                        <button type="submit" id="contact_form_submit" name="contact_submit" class="btn btn-maincolor mb-0">Send Message
-                                        </button>
-                                    </div>
-                                </div>
+                        </div>
+                        <div class="item-content box-shadow">
 
+                            <h4 class="entry-title">Aggression Camp</h4>
+                            <p>
+                                Aggression Camp addresses all levels of dog aggression, people aggression, insecurity, resource guarding, and more. Time and time again we take in students who simply had nowhere else to go. People that were turned away from every other dog trainer because their dog was “too high-risk”. All we ask is that you are open and honest with us about your dog's behavior and history. In many cases, aggressive behavior has developed over the years and is well established. Every dog is different, at The Canine Club of Chicago, we factor in personality, breed, age, and many other variables to develop a unique training plan that is best for you and your specific training needs, to achieve maximum success. The key is cooperation and transparency as well as following our suggestions and training plan moving forward. This is a board and train program that varies from 4-8 weeks depending on the level of aggression. No matter how aggressive your dog we can help. This training program has 100% Guaranteed Results that will last a lifetime!
+                            </p>
+
+                            <h5>Price: <span style="text-decoration:line-through; color: #2d2e2ef3;">$3,475</span>  <span style="font-size:1.2em;">$2,975</span></h5>
+                            <p><strong style="color:rgba(240, 59, 59, 0.981); font-size:1.5em;">Special Deal on Sale!! Call to Book Now!</strong></p>
+
+                            <div class="intro-layer buttons-layer d-flex flex-wrap">
+                                <a href="/contact" class="btn btn-maincolor">book training</a>
                             </div>
-                        </form>
 
-                    </div>
-                    <!--.col-* -->
+                        </div>
+
+                    </div><!-- .col-* -->
 
                 </div>
             </div>
@@ -351,7 +275,7 @@
                     <div class="col-lg-4 text-center text-lg-left animate" data-animation="fadeInUp">
 
                         <div class="widget widget_icons_list">
-                            <h3 class="widget-title">Our Contact</h3>
+                            <h3 class="widget-title">Our Contacts</h3>
 
                             <ul class="mb-10">
                                 <li class="icon-inline">
@@ -432,11 +356,3 @@
 
     </div><!-- eof #box_wrapper -->
 </div><!-- eof #canvas -->
-
-
-<script src="js/compressed.js"></script>
-<script src="js/main.js"></script>
-
-
-<!-- Google Map Script -->
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?callback=templateInitGoogleMap&key=AIzaSyAC9Fp9_b0Wjo2y9_g_MClC3d9tgWsM_ZU"></script>
