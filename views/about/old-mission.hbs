@@ -1,43 +1,78 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
 
-<div class="preloader">
-    <div class="preloader_image pulse"></div>
-</div>
+<head>
+	<title>Venator</title>
+	<meta charset="utf-8">
+	<!--[if IE]>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<![endif]-->
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<!-- search modal -->
-<div class="modal" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal">
-    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
-    </button>
-    <div class="widget widget_search">
-        <form method="get" class="searchform search-form" action="/">
-            <div class="form-group">
-                <input type="text" value="" name="search" class="form-control" placeholder="Search keyword" id="modal-search-input">
-            </div>
-            <button type="submit"></button>
-        </form>
-    </div>
-</div>
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-<!-- Unyson messages modal -->
-<div class="modal fade" tabindex="-1" role="dialog" id="messages_modal">
-    <div class="fw-messages-wrap ls p-normal">
-        <!-- Uncomment this UL with LI to show messages in modal popup to your user: -->
-        <!--
-    <ul class="list-unstyled">
-        <li>Message To User</li>
-    </ul>
-    -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/animations.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/main.css" class="color-switcher-link">
+	<script src="js/vendor/modernizr-custom.js"></script>
 
-    </div>
-</div><!-- eof .modal -->
+	<!--[if lt IE 9]>
+		<script src="js/vendor/html5shiv.min.js"></script>
+		<script src="js/vendor/respond.min.js"></script>
+		<script src="js/vendor/jquery-1.12.4.min.js"></script>
+	<![endif]-->
 
-<!-- wrappers for visual page editor and boxed version of template -->
-<div id="canvas">
-    <div id="box_wrapper">
+</head>
 
-        <!-- template sections -->
+<body>
+	<!--[if lt IE 9]>
+		<div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="color-main">upgrade your browser</a> to improve your experience.</div>
+	<![endif]-->
 
+	<div class="preloader">
+		<div class="preloader_image pulse"></div>
+	</div>
 
+	<!-- search modal -->
+	<div class="modal" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal">
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		</button>
+		<div class="widget widget_search">
+			<form method="get" class="searchform search-form" action="/">
+				<div class="form-group">
+					<input type="text" value="" name="search" class="form-control" placeholder="Search keyword" id="modal-search-input">
+				</div>
+				<button type="submit"></button>
+			</form>
+		</div>
+	</div>
+
+	<!-- Unyson messages modal -->
+	<div class="modal fade" tabindex="-1" role="dialog" id="messages_modal">
+		<div class="fw-messages-wrap ls p-normal">
+			<!-- Uncomment this UL with LI to show messages in modal popup to your user: -->
+			<!--
+		<ul class="list-unstyled">
+			<li>Message To User</li>
+		</ul>
+		-->
+
+		</div>
+	</div><!-- eof .modal -->
+
+	<!-- wrappers for visual page editor and boxed version of template -->
+	<div id="canvas">
+		<div id="box_wrapper">
+
+			<!-- template sections -->
         <section class="page_toplogo ls s-pt-45 s-pb-40 d-none d-lg-block">
             <div class="container-fluid">
                 <div class="row align-items-center">
@@ -94,8 +129,8 @@
                 </div>
             </div>
         </section>
-
         <!--eof topline-->
+        <!-- header with two Bootstrap columns - left for logo and right for navigation and includes (search, social icons, additional links and buttons etc -->
         <header class="page_header ls bg-maincolor4 main-style">
             <div class="container-fluid">
                 <div class="row align-items-center">
@@ -110,14 +145,14 @@
                                 <ul class="nav sf-menu">
 
                                     <!-- sof pages -->
-                                    <li>
+                                    <li class="active">
                                         <a href="/">Home</a>
                                     </li>
 
-                                    <li class="active">
+                                    <li>
                                         <a>About</a>
                                         <ul>
-                                            <li class="active">
+                                            <li>
                                                 <a href="/facility">Our Facility</a>
                                             </li>
                                             <li>
@@ -167,10 +202,9 @@
                                 <li>
                                     <span class="social-icons">
 
-                                        <a href="#" class="fa fa-twitter border-icon rounded-icon color-icon" title="twitter"></a>
                                         <a href="#" class="fa fa-google border-icon rounded-icon color-icon" title="google"></a>
                                         <a href="#" class="fa fa-facebook border-icon rounded-icon color-icon" title="facebook"></a>
-                                        <a href="#" class="fa fa-linkedin border-icon rounded-icon color-icon" title="linkedin"></a>
+                                        <a href="#" class="fa fa-instagram border-icon rounded-icon color-icon" title="instagram"></a>
 
                                     </span>
                                 </li>
@@ -183,6 +217,7 @@
             <!-- header toggler -->
             <span class="toggle_menu"><span></span></span>
         </header>
+
 
 			<section class="page_title ls  s-py-5">
 				<div class="container">
@@ -413,91 +448,128 @@
 				</div>
 			</section>
 
-        <footer class="page_footer ds s-pb-35 s-pt-60 s-pb-md-70 s-pt-md-90 s-pb-xl-130 s-pt-xl-160 c-mb-20 c-gutter-30 container-px-0">
+			<footer class="page_footer ds s-pb-35 s-pt-60 s-pb-md-70 s-pt-md-90 s-pb-xl-130 s-pt-xl-160 c-mb-20 c-gutter-30 container-px-0">
 
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 text-center text-lg-left animate" data-animation="fadeInUp">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-4 text-center text-lg-left animate" data-animation="fadeInUp">
+							<div class="widget widget_twitter">
+								<h3 class="widget-title">Twitter</h3>
+								<div class="twitter-item">
+									<div class="media">
+										<div class="icon-styled color-main fs-18">
+											<i class="fa fa-twitter" aria-hidden="true"></i>
+										</div>
+										<div class="media-body color_1">
+											<p>
+												Tamquam eligendi ex qui ex sea aliquam blandit has cum tacimates.
+											</p>
+											<a href="№">http://on.bcg.com/2enKlr7</a>
+										</div>
+									</div>
+									<div class="media">
+										<div class="icon-styled color-main fs-18">
+											<i class="fa fa-twitter" aria-hidden="true"></i>
+										</div>
+										<div class="media-body color_1">
+											<p>
+												Tamquam eligendi ex qui ex sea aliquam blandit has cum tacimates.
+											</p>
+											<a href="№">http://on.bcg.com/2enKlr7</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 
-                        <div class="widget widget_icons_list">
-                            <h3 class="widget-title">Our Contact Info</h3>
+						<div class="col-lg-4 text-center text-lg-left animate" data-animation="fadeInUp">
 
-                            <ul class="mb-10">
-                                <li class="icon-inline">
-                                    <div class="icon-styled icon-top color-main4 fs-14">
-                                        <i class="fa fa-map-marker"></i>
-                                    </div>
-                                    <p>500 N Lake Shore Dr. Chicago 60611</p>
-                                </li>
-                                <li class="icon-inline">
-                                    <div class="icon-styled icon-top color-main4 fs-14">
-                                        <i class="fa fa-envelope"></i>
-                                    </div>
-                                    <a href="#">info@canineclubchicago.com</a>
-                                </li>
-                                <li class="icon-inline">
-                                    <div class="icon-styled icon-top color-main4 fs-14">
-                                        <i class="fa fa-phone"></i>
-                                    </div>
-                                    <p>(630) 999 5222</p>
-                                </li>
-                                <li class="icon-inline">
-                                    <div class="icon-styled icon-top color-main4 fs-14">
-                                        <i class="fa fa-clock-o"></i>
-                                    </div>
-                                    <p>Working hours: 7AM - 10PM </p>
-                                </li>
-                            </ul>
+							<div class="widget widget_icons_list">
+								<h3 class="widget-title">Our Contact Info</h3>
 
-                            <span class="social-icons">
-                                <a href="#" class="fa fa-twitter  rounded-icon color-bg-icon footer-icon" title="twitter"></a>
-                                <a href="#" class="fa fa-google  rounded-icon color-bg-icon footer-icon" title="google"></a>
-                                <a href="#" class="fa fa-facebook  rounded-icon color-bg-icon footer-icon" title="facebook"></a>
-                                <a href="#" class="fa fa-linkedin  rounded-icon color-bg-icon footer-icon" title="linkedin"></a>
-                            </span>
-                        </div>
-                    </div>
+								<ul class="mb-10">
+									<li class="icon-inline">
+										<div class="icon-styled icon-top color-main4 fs-14">
+											<i class="fa fa-map-marker"></i>
+										</div>
+										<p>500 N Lake Shore Dr. Chicago 60611</p>
+									</li>
+									<li class="icon-inline">
+										<div class="icon-styled icon-top color-main4 fs-14">
+											<i class="fa fa-envelope"></i>
+										</div>
+										<a href="#">info@canineclubchicago.com</a>
+									</li>
+									<li class="icon-inline">
+										<div class="icon-styled icon-top color-main4 fs-14">
+											<i class="fa fa-phone"></i>
+										</div>
+										<p>(630) 999 5222</p>
+									</li>
+									<li class="icon-inline">
+										<div class="icon-styled icon-top color-main4 fs-14">
+											<i class="fa fa-clock-o"></i>
+										</div>
+										<p>Working hours: 7AM - 10PM </p>
+									</li>
+								</ul>
 
-                    <div class="col-lg-6 text-center text-lg-left animate" data-animation="fadeInUp">
-                        <div class="widget mb-0">
+								<span class="social-icons">
+									<a href="#" class="fa fa-twitter  rounded-icon color-bg-icon footer-icon" title="twitter"></a>
+									<a href="#" class="fa fa-google  rounded-icon color-bg-icon footer-icon" title="google"></a>
+									<a href="#" class="fa fa-facebook  rounded-icon color-bg-icon footer-icon" title="facebook"></a>
+									<a href="#" class="fa fa-linkedin  rounded-icon color-bg-icon footer-icon" title="linkedin"></a>
+								</span>
+							</div>
+						</div>
 
-                            <h3 class="widget-title">Newsletter</h3>
+						<div class="col-lg-4 text-center text-lg-left animate" data-animation="fadeInUp">
+							<div class="widget mb-0">
 
-                            <p class="color-font mb-3">
-                                Subscribe to our Newsletter to be updated,
-                                we promise not to spam.
-                            </p>
+								<h3 class="widget-title">Newsletter</h3>
 
-                            <form class="signup" action="/">
+								<p class="color-font mb-3">
+									Subscribe to our newsletter to be updated on deals and promotions!
+								</p>
 
-                                <input id="mailchimp_email" name="email" type="email" class="form-control mailchimp_email text-center text-lg-left" placeholder="Enter Email Address">
+								<form class="signup" action="/">
 
-                                <button type="submit" class="btn btn-maincolor mt-30">
-                                    Subscribe
-                                </button>
-                                <div class="response"></div>
-                            </form>
+									<input id="mailchimp_email" name="email" type="email" class="form-control mailchimp_email text-center text-lg-left" placeholder="Enter Email Address">
 
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
+									<button type="submit" class="btn btn-maincolor mt-30">
+										Subscribe
+									</button>
+									<div class="response"></div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
 
-        <section class="page_copyright ds s-py-5">
-            <div class="container border-top-color">
-                <div class="row align-items-center ">
-                    <div class="divider-20 d-none d-lg-block"></div>
-                    <div class="divider-10 d-none d-md-block d-lg-none"></div>
-                    <div class="col-md-12 text-center">
-                        <p>&copy; Copyright <span class="copyright_year">2018</span> All Rights Reserved</p>
-                    </div>
-                    <div class="divider-20 d-none d-lg-block"></div>
-                    <div class="divider-10 d-none d-md-block d-lg-none"></div>
-                </div>
-            </div>
-        </section>
+			<section class="page_copyright ds s-py-5">
+				<div class="container border-top-color">
+					<div class="row align-items-center ">
+						<div class="divider-20 d-none d-lg-block"></div>
+						<div class="divider-10 d-none d-md-block d-lg-none"></div>
+						<div class="col-md-12 text-center">
+							<p>&copy; Copyright <span class="copyright_year">2018</span> All Rights Reserved</p>
+						</div>
+						<div class="divider-20 d-none d-lg-block"></div>
+						<div class="divider-10 d-none d-md-block d-lg-none"></div>
+					</div>
+				</div>
+			</section>
 
 
-    </div><!-- eof #box_wrapper -->
-</div><!-- eof #canvas -->
+		</div><!-- eof #box_wrapper -->
+	</div><!-- eof #canvas -->
+
+
+	<script src="js/compressed.js"></script>
+	<script src="js/main.js"></script>
+
+
+</body>
+
+</html>
