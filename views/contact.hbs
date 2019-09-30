@@ -3,21 +3,6 @@
     <div class="preloader_image pulse"></div>
 </div>
 
-<!-- search modal -->
-<div class="modal" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal">
-    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
-    </button>
-    <div class="widget widget_search">
-        <form method="get" class="searchform search-form" action="/">
-            <div class="form-group">
-                <input type="text" value="" name="search" class="form-control" placeholder="Search keyword" id="modal-search-input">
-            </div>
-            <button type="submit"></button>
-        </form>
-    </div>
-</div>
-
 <!-- Unyson messages modal -->
 <div class="modal fade" tabindex="-1" role="dialog" id="messages_modal">
     <div class="fw-messages-wrap ls p-normal">
@@ -261,51 +246,60 @@
 
                     <div class="col-lg-12 animate mb-0" data-animation="scaleAppear">
 
-                        <form class="contact-form form-inverse c-mb-20 c-gutter-20" method="post" action="/">
+                    <form class="contact-form c-mb-lg-20 c-mb-10 c-gutter-20" method="POST" action="/contact">
 
-                            <div class="row">
+                        <div class="row">
 
-                                <div class="col-md-6">
-                                    <div class="form-group has-placeholder">
-                                        <label for="name">Full Name <span class="required">*</span></label>
-                                        <input type="text" aria-required="true" size="30" value="" name="name" id="name" class="form-control text-center" placeholder="Full Name">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group has-placeholder">
-                                        <label for="tel">Your Phone<span class="required">*</span></label>
-                                        <input type="tel" aria-required="true" size="30" value="" name="tel" id="tel" class="form-control text-center" placeholder="Your Phone">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group has-placeholder">
-                                        <label for="email">Email address<span class="required">*</span></label>
-                                        <input type="email" aria-required="true" size="30" value="" name="email" id="email" class="form-control text-center" placeholder="Email Address">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group has-placeholder">
-                                        <label for="subject">Subject<span class="required">*</span></label>
-                                        <input type="text" aria-required="true" size="30" value="" name="subject" id="subject" class="form-control text-center" placeholder="Your Subject">
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-group has-placeholder">
-                                        <label for="message">Message</label>
-                                        <textarea aria-required="true" rows="7" cols="45" name="message" id="message" class="form-control text-center" placeholder="Your Message"></textarea>
-                                    </div>
+                            <div class="col-xl-6">
+                                <div class="form-group has-placeholder">
+                                    <label for="name">Your Name<span class="required">*</span></label>
+                                    <input type="text" aria-required="true" size="30" value="" name="name" id="name" class="form-control text-center" placeholder="Your Name">
                                 </div>
                             </div>
-                            <div class="row mt-3">
-                                <div class="col-sm-12">
-                                    <div class="form-group text-center">
-                                        <button type="submit" id="contact_form_submit" name="contact_submit" class="btn btn-maincolor mb-0">Send Message
-                                        </button>
-                                    </div>
-                                </div>
 
+                            <div class="col-xl-6">
+                                <div class="form-group has-placeholder">
+                                    <label for="phone">Your Phone<span class="required">*</span></label>
+                                    <input type="text" aria-required="true" size="30" value="" name="phone" id="phone" class="form-control text-center" placeholder="Your Phone">
+                                </div>
                             </div>
-                        </form>
+
+                            <div class="col-xl-6">
+                                <div class="form-group has-placeholder">
+                                    <label for="email">Email address<span class="required">*</span></label>
+                                    <input type="email" aria-required="true" size="30" value="" name="email" id="email" class="form-control text-center" placeholder="Email Address">
+                                </div>
+                            </div>
+
+                            <div class="col-xl-6">
+                                <div class="form-group has-placeholder">
+                                    <label for="subject">Your subject<span class="required">*</span></label>
+                                    <input type="text" aria-required="true" size="30" value="" name="subject" id="subject" class="form-control text-center" placeholder="Your subject">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="form-group has-placeholder">
+                                    <label for="message">Your Message</label>
+                                    <textarea aria-required="true" rows="6" cols="45" name="message" id="message" class="form-control text-center" placeholder="Your Message"></textarea>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row mt-15">
+                            <div class="divider-20 hidden-above-lg"></div>
+                            <div class="col-sm-12 text-center">
+                                <div class="form-group buttons-group">
+                                    <button type="submit" id="contact_form_submit" name="contact_submit" class="btn btn-maincolor">Send Message</button>
+                                    {{!-- <p>Thanks for contacting us. Someone will be with your shortly.</p> --}}
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </form>
 
                     </div>
                     <!--.col-* -->
@@ -395,8 +389,7 @@
                             <h3 class="widget-title">Newsletter</h3>
 
                             <p class="color-font mb-3">
-                                Subscribe to our Newsletter to be updated,
-                                we promise not to spam.
+                                Subscribe to our newsletter to be updated on deals and promotions!
                             </p>
 
                             <form class="signup" action="/">
@@ -432,11 +425,11 @@
 
     </div><!-- eof #box_wrapper -->
 </div><!-- eof #canvas -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 
-
-<script src="js/compressed.js"></script>
-<script src="js/main.js"></script>
-
-
-<!-- Google Map Script -->
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?callback=templateInitGoogleMap&key=AIzaSyAC9Fp9_b0Wjo2y9_g_MClC3d9tgWsM_ZU"></script>
+<script>
+    $("#contactt_form_submit").click(function() {
+        $("#contactt_form_submit").html('Contacted!');
+        $("#contactt_form_submit").prop("disabled", true);
+    });
+</script>

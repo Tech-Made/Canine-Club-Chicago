@@ -37,6 +37,18 @@ router.get('/privatelessonbundle', (req, res) => {
   res.render('services/privatelessonbundle');
 });
 
+router.get('/servicedogtraining', (req, res) => {
+  res.render('services/servicedogtraining');
+});
+
+router.get('/therapydogtraining', (req, res) => {
+  res.render('services/therapydogtraining');
+});
+
+router.get('/protectiondogtraining', (req, res) => {
+  res.render('services/protectiondogtraining');
+});
+
 router.get('/boarding', (req, res) => {
   res.render('boarding');
 });
