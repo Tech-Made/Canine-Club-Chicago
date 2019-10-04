@@ -253,28 +253,28 @@
                             <div class="col-xl-6">
                                 <div class="form-group has-placeholder">
                                     <label for="name">Your Name<span class="required">*</span></label>
-                                    <input type="text" aria-required="true" size="30" value="" name="name" id="name" class="form-control text-center" placeholder="Your Name">
+                                    <input type="text" id="name" aria-required="true" size="30" value="" name="name" id="name" class="form-control text-center" placeholder="Your Name">
                                 </div>
                             </div>
 
                             <div class="col-xl-6">
                                 <div class="form-group has-placeholder">
                                     <label for="phone">Your Phone<span class="required">*</span></label>
-                                    <input type="text" aria-required="true" size="30" value="" name="phone" id="phone" class="form-control text-center" placeholder="Your Phone">
+                                    <input type="text" id="phone" aria-required="true" size="30" value="" name="phone" id="phone" class="form-control text-center" placeholder="Your Phone">
                                 </div>
                             </div>
 
                             <div class="col-xl-6">
                                 <div class="form-group has-placeholder">
                                     <label for="email">Email address<span class="required">*</span></label>
-                                    <input type="email" aria-required="true" size="30" value="" name="email" id="email" class="form-control text-center" placeholder="Email Address">
+                                    <input type="email" id='email' aria-required="true" size="30" value="" name="email" id="email" class="form-control text-center" placeholder="Email Address">
                                 </div>
                             </div>
 
                             <div class="col-xl-6">
                                 <div class="form-group has-placeholder">
                                     <label for="subject">Your subject<span class="required">*</span></label>
-                                    <input type="text" aria-required="true" size="30" value="" name="subject" id="subject" class="form-control text-center" placeholder="Your subject">
+                                    <input type="text" id="subject" aria-required="true" size="30" value="" name="subject" id="subject" class="form-control text-center" placeholder="Your subject">
                                 </div>
                             </div>
                         </div>
@@ -283,7 +283,7 @@
                             <div class="col-sm-12">
                                 <div class="form-group has-placeholder">
                                     <label for="message">Your Message</label>
-                                    <textarea aria-required="true" rows="6" cols="45" name="message" id="message" class="form-control text-center" placeholder="Your Message"></textarea>
+                                    <textarea id="message" aria-required="true" rows="6" cols="45" name="message" id="message" class="form-control text-center" placeholder="Your Message"></textarea>
                                 </div>
                             </div>
 
@@ -292,7 +292,7 @@
                             <div class="divider-20 hidden-above-lg"></div>
                             <div class="col-sm-12 text-center">
                                 <div class="form-group buttons-group">
-                                    <button type="submit" id="contact_form_submit" name="contact_submit" class="btn btn-maincolor">Send Message</button>
+                                    <button type="button" id="contact_form_submit" name="contact_submit" class="btn btn-maincolor">Send Message</button>
                                     {{!-- <p>Thanks for contacting us. Someone will be with your shortly.</p> --}}
                                 </div>
                             </div>
@@ -312,40 +312,10 @@
 
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4 text-center text-lg-left animate" data-animation="fadeInUp">
-                        <div class="widget widget_twitter">
-                            <h3 class="widget-title">Twitter</h3>
-                            <div class="twitter-item">
-                                <div class="media">
-                                    <div class="icon-styled color-main fs-18">
-                                        <i class="fa fa-twitter" aria-hidden="true"></i>
-                                    </div>
-                                    <div class="media-body color_1">
-                                        <p>
-                                            Tamquam eligendi ex qui ex sea aliquam blandit has cum tacimates.
-                                        </p>
-                                        <a href="№">http://on.bcg.com/2enKlr7</a>
-                                    </div>
-                                </div>
-                                <div class="media">
-                                    <div class="icon-styled color-main fs-18">
-                                        <i class="fa fa-twitter" aria-hidden="true"></i>
-                                    </div>
-                                    <div class="media-body color_1">
-                                        <p>
-                                            Tamquam eligendi ex qui ex sea aliquam blandit has cum tacimates.
-                                        </p>
-                                        <a href="№">http://on.bcg.com/2enKlr7</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 text-center text-lg-left animate" data-animation="fadeInUp">
+                    <div class="col-lg-6 text-center text-lg-left animate" data-animation="fadeInUp">
 
                         <div class="widget widget_icons_list">
-                            <h3 class="widget-title">Our Contact</h3>
+                            <h3 class="widget-title">Our Contact Info</h3>
 
                             <ul class="mb-10">
                                 <li class="icon-inline">
@@ -370,20 +340,19 @@
                                     <div class="icon-styled icon-top color-main4 fs-14">
                                         <i class="fa fa-clock-o"></i>
                                     </div>
-                                    <p>Working hours: 7AM - 10PM </p>
+                                    <p>Working hours: 7:00AM - 10:00PM </p>
                                 </li>
                             </ul>
 
                             <span class="social-icons">
-                                <a href="#" class="fa fa-twitter  rounded-icon color-bg-icon footer-icon" title="twitter"></a>
                                 <a href="#" class="fa fa-google  rounded-icon color-bg-icon footer-icon" title="google"></a>
                                 <a href="#" class="fa fa-facebook  rounded-icon color-bg-icon footer-icon" title="facebook"></a>
-                                <a href="#" class="fa fa-linkedin  rounded-icon color-bg-icon footer-icon" title="linkedin"></a>
+                                <a href="#" class="fa fa-instagram  rounded-icon color-bg-icon footer-icon" title="instagram"></a>
                             </span>
                         </div>
                     </div>
 
-                    <div class="col-lg-4 text-center text-lg-left animate" data-animation="fadeInUp">
+                    <div class="col-lg-6 text-center text-lg-left animate" data-animation="fadeInUp">
                         <div class="widget mb-0">
 
                             <h3 class="widget-title">Newsletter</h3>
@@ -392,11 +361,11 @@
                                 Subscribe to our newsletter to be updated on deals and promotions!
                             </p>
 
-                            <form class="signup" action="/">
+                            <form method="POST" action="/join">
 
-                                <input id="mailchimp_email" name="email" type="email" class="form-control mailchimp_email text-center text-lg-left" placeholder="Enter Email Address">
+                                <input name="email" type="email" id='newsletterEmail' class="form-control mailchimp_email text-center text-lg-left" placeholder="Enter Email Address">
 
-                                <button type="submit" class="btn btn-maincolor mt-30">
+                                <button type="button" id='joinNewsLetterBtn' class="btn btn-maincolor mt-30">
                                     Subscribe
                                 </button>
                                 <div class="response"></div>
@@ -428,8 +397,36 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 
 <script>
-    $("#contactt_form_submit").click(function() {
-        $("#contactt_form_submit").html('Contacted!');
-        $("#contactt_form_submit").prop("disabled", true);
+    document.getElementById("contact_form_submit").addEventListener("click", function(event){
+        const name = document.getElementById('name').value;
+        const phone = document.getElementById('phone').value;
+        const email = document.getElementById('email').value;
+        const subject = document.getElementById('subject').value;
+        const message = document.getElementById('message').value;
+        axios.post('/contact', {
+                name: name,
+                phone: phone,
+                email: email,
+                subject: subject,
+                message: message
+            }).then(res => {
+                $("#contact_form_submit").html('Contacted!');
+                $("#contact_form_submit").prop("disabled", true);
+            }).catch(error => {
+                console.error(error);
+                $("#contact_form_submit").html('Something Went Wrong!');
+            });
+    });
+    document.getElementById("joinNewsLetterBtn").addEventListener("click", function(event){
+        const email = document.getElementById('newsletterEmail').value;
+        axios.post('/contact', {
+                email: email,
+            }).then(res => {
+                $("#joinNewsLetterBtn").html('Joined!');
+                $("#joinNewsLetterBtn").prop("disabled", true);
+            }).catch(error => {
+                console.error(error);
+                $("#joinNewsLetterBtn").html('Something Went Wrong!');
+            });
     });
 </script>
