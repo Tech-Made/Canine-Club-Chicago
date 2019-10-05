@@ -197,7 +197,7 @@ router.post('/contact', async (req, res) => {
 
 router.post('/join'), async (req,  res) => {
     const user = new User(req.body);
-    user.save();
+    await user.save();
     res.status(200);
     res.end();
 }
