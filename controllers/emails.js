@@ -5,8 +5,6 @@ const User = require('../models/User')
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 router.post('/contact', async (req, res) => {
-    console.log('hey...'); 
-       
     // req.body looks like:
     // name
     // phone
@@ -154,6 +152,7 @@ router.post('/contact', async (req, res) => {
                         height="100%"
                         valign="top"
                         bgcolor="">
+                        <div><strong>Name: </strong><br>${data.name}</div>
                         <div><strong>Subject: </strong><br>${data.subject}</div>
                         <div><strong>Message: </strong><br>${data.message}</div>
                         <div><strong>Phone: </strong><br>${data.phone}</div>
