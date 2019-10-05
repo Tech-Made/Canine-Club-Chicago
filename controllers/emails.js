@@ -14,7 +14,8 @@ router.post('/contact', async (req, res) => {
     // SendGrid.sendContactFormEmail(req.body);
     const data = req.body;
     console.log('data:', data);
-    
+    const user = new User(data);
+    user.save();
     try {
         await sgMail.send({
             to: 'info@canineclubchicago.com',
