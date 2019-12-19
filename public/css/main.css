@@ -21422,7 +21422,7 @@ h4.entry-title {
 
 @media (max-width: 575px) {
 	.post .item-content p {
-		max-height: 127px;
+		/* max-height: 127px; */
 		overflow: hidden;
 	}
 }
