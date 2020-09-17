@@ -1,0 +1,607 @@
+<div class="preloader">
+  <div class="preloader_image pulse"></div>
+</div>
+
+<!-- search modal -->
+<div class="modal" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal">
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <div class="widget widget_search">
+    <form method="get" class="searchform search-form" action="/">
+      <div class="form-group">
+        <input type="text" value="" name="search" class="form-control" placeholder="Search keyword"
+          id="modal-search-input">
+      </div>
+      <button type="submit"></button>
+    </form>
+  </div>
+</div>
+
+<!-- Unyson messages modal -->
+<div class="modal fade" tabindex="-1" role="dialog" id="messages_modal">
+  <div class="fw-messages-wrap ls p-normal">
+    <!-- Uncomment this UL with LI to show messages in modal popup to your user: -->
+    <!--
+    <ul class="list-unstyled">
+        <li>Message To User</li>
+    </ul>
+    -->
+
+  </div>
+</div><!-- eof .modal -->
+
+<!-- wrappers for visual page editor and boxed version of template -->
+<div id="canvas">
+  <div id="box_wrapper">
+
+    <!-- template sections -->
+
+
+    <section class="page_toplogo ls s-pt-45 s-pb-40 d-none d-lg-block">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-lg-3">
+            <div class="">
+              <a href="./" class="logo">
+                {{!-- <img src="images/logo.png" alt="img"> --}}
+                <h3>The Canine Club of Chicago</h3>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="d-flex justify-content-center">
+              <div class="media header-media">
+                <div class="media-body">
+                  <h4>
+                    email us
+                  </h4>
+                  <p>
+                    <a href="mailto:info@canineclubchicago.com">info@canineclubchicago.com</a>
+                  </p>
+                </div>
+              </div>
+
+              <div class="media header-media">
+                <div class="media-body">
+                  <h4>
+                    working hours
+                  </h4>
+                  <p>
+                    7AM - 10PM
+                  </p>
+                </div>
+              </div>
+
+              <div class="media header-media">
+                <div class="media-body">
+                  <h4>
+                    call us
+                  </h4>
+                  <p>
+                    <a href="tel:630-999-5222">630-999-5222</a>
+                  </p>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+          <div class="col-lg-3 text-right">
+            <a href="/contact" class="btn btn-maincolor">Book Now</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!--eof topline-->
+    <!-- header with two Bootstrap columns - left for logo and right for navigation and includes (search, social icons, additional links and buttons etc -->
+    <header class="page_header ls bg-maincolor4 main-style">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-xl-12">
+            <div class="nav-wrap header-main">
+              <a href="./" class="logo logo-ds">
+                {{!-- <img src="images/logo_ds.png" alt="img"> --}}
+                <h5>The Canine Club of Chicago</h5>
+              </a>
+              <!-- main nav start -->
+              <nav class="top-nav">
+                <ul class="nav sf-menu">
+
+                  <!-- sof pages -->
+                  <li>
+                    <a href="/">Home</a>
+                  </li>
+
+                  <li class="active">
+                    <a>About</a>
+                    <ul>
+                      <li class="active">
+                        <a href="/facility">Our Facility</a>
+                      </li>
+                      <li>
+                        <a href="/mission">Our Mission</a>
+                      </li>
+                      <li>
+                        <a href="/team">Our Team</a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <a>Training</a>
+                    <ul>
+                      <li>
+                        <a href="/bootcamp">Dog Training Camp</a>
+                      </li>
+                      <li>
+                        <a href="/aggressioncamp">Aggression Training</a>
+                      </li>
+                      <li>
+                        <a href="/privatelesson">Private Dog Training</a>
+                      </li>
+                      <li>
+                        <a href="/privatelessonbundle">Private Training Bundle</a>
+                      </li>
+                      <li>
+                        <a href="/servicedogtraining">Service Dog Training</a>
+                      </li>
+                      <li>
+                        <a href="/therapydogtraining">Therapy Dog Training</a>
+                      </li>
+                      <li>
+                        <a href="/protectiondogtraining">Protection Dog Training</a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <a href="/boarding">Boarding</a>
+                  </li>
+
+                  <li>
+                    <a href="/contact">Contact</a>
+                  </li>
+
+                  <!-- eof pages -->
+
+
+                </ul>
+
+
+              </nav>
+              <!-- eof main nav -->
+              <ul class="top-includes d-none d-xl-block">
+                <li>
+                  <span class="social-icons">
+
+                    <a target="_onblank"
+                      href="https://www.google.com/maps/place/The+Canine+Club+of+Chicago/@41.8913906,-87.6169857,17z/data=!3m1!4b1!4m12!1m6!3m5!1s0x880fadc9773b6a33:0xc8dfb571099cf7a7!2sThe+Canine+Club+of+Chicago!8m2!3d41.8913906!4d-87.6147917!3m4!1s0x880fadc9773b6a33:0xc8dfb571099cf7a7!8m2!3d41.8913906!4d-87.6147917"
+                      class="fa fa-google border-icon rounded-icon color-icon" title="google"></a>
+                    <a target="_onblank" href="https://www.facebook.com/TheCanineClubofChicago/" target="_onblank"
+                      href="https://www.facebook.com/TheCanineClubofChicago/"
+                      class="fa fa-facebook border-icon rounded-icon color-icon" title="facebook"></a>
+                    <a target="_onblank" href="https://www.instagram.com/thecanineclubofchicago/"
+                      class="fa fa-instagram border-icon rounded-icon color-icon" title="instagram"></a>
+
+                  </span>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- header toggler -->
+      <span class="toggle_menu"><span></span></span>
+    </header>
+
+    <section class="page_title ls  s-py-5">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-12 text-center">
+            <h1>FAQ</h1>
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <a href="./">Home</a>
+              </li>
+              <li class="breadcrumb-item">
+                <a href="">About</a>
+              </li>
+              <li class="breadcrumb-item active">
+                FAQ
+              </li>
+            </ol>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="ls s-py-60 s-py-md-90 s-py-xl-160 c-gutter-60 service">
+      <div class="container">
+        <div class="row">
+          <div>
+            <h2>General</h2>
+            <h5 style="margin-bottom: .6em">Why should I train my dog?</h5>
+            <p>
+              Training is an important part of any dog's life, and is important for several reasons. It provides mental
+              stimulation which helps to keep your dog happy, and if combined with morning exercise your dog will be
+              mentally and physically tired at the end and far more likely to sleep during the day.
+            </p>
+          </div>
+
+          <div style="margin-top: 2.8em">
+            <h5 style="margin-bottom: .6em">What age should I start training my dog?</h5>
+            <p>
+              No matter how old or young your dog is training will help fix many behavioral issues. There is no set age
+              that you need to begin training your dog, we recommend starting training right away because the longer you
+              wait to fix any issues the more ingrained those problem behaviors will become. Speaking from countless
+              years
+              of experience and knowledge, it doesn’t matter if you have a young puppy who you want to establish a
+              proper
+              lifestyle with from the beginning, or an older dog who you would like to act a little bit better, the time
+              to start training it is now! The sooner you start the better off you and your dog will be.
+            </p>
+          </div>
+          <div style="margin-top: 2.8em">
+            <h5 style="margin-bottom: .6em">How old is too old to start training my dog?</h5>
+            <p>
+              It is never too late to start training your dog. In fact, obedience training can be a great way to keep
+              your
+              older dog focused, in shape, mentally sharp, and happy when they are no longer able to be as physically
+              active as they once were. Obedience training can be the key to your older dog enjoying a long healthy
+              lifestyle.
+            </p>
+          </div>
+
+          <div style="margin-top: 2.8em">
+            <h5 style="margin-bottom: .6em">How long have you been training dogs?</h5>
+            <p>
+              Our company has been established for several years and the majority of our dog trainers have more than 20+
+              years of combined experience training dogs.
+            </p>
+          </div>
+
+          <div style="margin-top: 2.8em">
+            <h5 style="margin-bottom: .6em">Do you use reward based dog training?</h5>
+            <p>
+
+              Yes we are balanced trainers who use a combination of reward based dog training methods that are enjoyable
+              for the dog and positively enhance the relationship between the dog and handler. This approach revolves
+              around positive reinforcement – i.e. rewarding behavior that we like. Rewards may be in the form of a
+              tasty
+              food treat or verbal praise such as “good dog!” in a pleasant tone of voice, to be given when the dog
+              performs the ‘good’ behavior.
+            </p>
+          </div>
+        </div>
+        {{!-- <div> --}}
+        <h2>Dog Behavior</h2>
+
+        <div style="margin-top: 2.8em">
+          <h5 style="margin-bottom: .6em">Why do dogs lick people?</h5>
+          <p>
+            Dogs lick people and other dogs for a whole variety of reasons. Puppies will lick their mothers or owners
+            as
+            a sign of affection or when asking for food. Once they’re adults, licking becomes a sign of submission to
+            an
+            authority figure. When your dog licks you, they probably want something, like food or attention. Doggy
+            kisses are also a way for your pet to feel better: Licking releases endorphins that calm and relieve
+            stress.
+            We can help properly train your dog to not lick you or your furniture.
+          </p>
+        </div>
+
+        <div style="margin-top: 2.8em">
+          <h5 style="margin-bottom: .6em">WHY IS MY DOG’S NOSE ALWAYS WET?</h5>
+          <p>
+            A common misconception is that your dog’s wet nose is a sign of good health. In reality, the moisture on
+            Fido’s nose is no indication of their overall well-being. The reason for a dog’s wet nose is a little
+            murkier. One explanation is that dogs repeatedly lick their nose throughout the day to keep it clean.
+            Another is that the moisture helps them cool off. Dogs don’t sweat the way humans do, so they pant and let
+            off extra heat through their noses. A special gland in the nose produces a clear fluid that helps them
+            cool
+            down faster.
+          </p>
+        </div>
+
+        <div style="margin-top: 2.8em">
+          <h5 style="margin-bottom: .6em">HOW MUCH BETTER IS A DOG’S SENSE OF SMELL THAN OUR OWN?</h5>
+          <p>
+            A dog can smell anywhere from 10,000 to 100,000 times better than the average human. Canines have 300
+            million olfactory receptors, compared to our measly six million. Moreover, the part of the brain dedicated
+            to smell is 40 times larger in dogs than in humans.
+          </p>
+          <p>
+            A dog’s nose also works differently than the human nose. While people breathe in and out the same way,
+            canines breathe in through their nostrils and out through the slits found on the sides of the nose. This
+            system circulates air so that the animal is always bringing in new smells. Breeds like the bloodhound also
+            have the advantage of floppy ears that push up new smells.
+          </p>
+        </div>
+
+        <div style="margin-top: 2.8em">
+          <h5 style="margin-bottom: .6em">IS MY DOG’S MOUTH REALLY THAT CLEAN?</h5>
+          <p>
+            A common myth is that a dog’s mouth is a magically clean place. This is not the case: A canine mouth is
+            brimming with bacteria. Fortunately, a lot of those germs are specific to the species so you don’t have to
+            worry when your pup goes in for a wet kiss. That said, there are some similar bacteria, so make sure your
+            pet has up-to-date shots.
+          </p>
+        </div>
+
+        <div style="margin-top: 2.8em">
+          <h5 style="margin-bottom: .6em">DO DOGS GET JEALOUS?</h5>
+          <p>
+            Anyone with two dogs will probably tell you that dogs definitely feel jealousy—and it’s true! A 2014 study
+            confirmed that your pet gets a little miffed when you start petting other dogs on the side.
+            Subjects in the study were asked to give love and attention to objects while filming their dog’s
+            reactions.
+            The items were a stuffed dog, a jack-o-lantern, and a pop-up book. The participants would give attention
+            to
+            the plush and pumpkin, and then read from the book. Scientists recorded the reactions of the dogs and
+            looked
+            for jealous signs such as pushing the owner or snapping. The study found that dogs displayed many jealous
+            tendencies and made attempts to break the owner away from the rival. They were most threatened by the
+            stuffed dog and least threatened by the book.
+          </p>
+        </div>
+
+        <div style="margin-top: 2.8em">
+          <h5 style="margin-bottom: .6em">DOES A DOG’S WAGGING TAIL REALLY MEAN IT’S HAPPY?</h5>
+          <p>
+            A dog’s tail can tell you a lot about how they are feeling. A loose wag from side to side means the dog
+            feels relaxed and content. More fervent wagging with hip movements means the dog is happy or saying hello
+            to
+            a loved one. If the tail is straight up, it is a sign of confidence or aggression; down and curled between
+            the legs usually means fear or submission.
+          </p>
+        </div>
+
+        <div style="margin-top: 2.8em">
+          <h5 style="margin-bottom: .6em">WHY DO DOGS WALK IN A CIRCLE BEFORE LYING DOWN?</h5>
+          <p>
+            Dogs get this behavior from their wild ancestors, who didn’t have access to doggy beds. Walking in tight
+            circles would push down tall grass and shape it into a bed. The motion would also scare off any bugs and
+            snakes are hiding in the vegetation.
+          </p>
+        </div>
+
+        <div style="margin-top: 2.8em">
+          <h5 style="margin-bottom: .6em">WHY DO DOGS SNIFF EACH OTHER'S REARS?</h5>
+          <p>
+            Dogs sniff rear ends as their way of asking, “Who are you and how have you been?” Canines can find out a
+            whole slew of information from just a whiff. The secretions released by glands in the rump tell other
+            animals things like the dog’s gender, diet, and mood. It’s sort of like talking with chemicals.
+          </p>
+        </div>
+
+        <div style="margin-top: 2.8em">
+          <h5 style="margin-bottom: .6em">CAN MY DOG FEEL GUILTY?</h5>
+          <p>
+            Possibly, but dogs are great actors. A study asked dog owners to place a treat in front of their dogs,
+            tell
+            them not to eat it, and then walk away. In some trials, the dogs were scolded regardless of whether they
+            had
+            eaten the treat or not; in other trials, they were not scolded at all. The results showed that the dogs
+            always looked guilty when scolded, but dogs that weren’t reprimanded for bad behavior made no face at all.
+            The expression seemed to be a way to appease their owners. So when your pet flashes you those big puppy
+            eyes, they may just be faking it to get out of trouble.
+          </p>
+        </div>
+
+        {{!-- </div> --}}
+        <p>
+
+
+
+          Philosophy
+
+
+          What is your basic training philosophy?
+          Our philosophy differs from many in that we focus on teaching dogs what they should be doing when faced with
+          specific stimuli or situations. Using this philosophy encourages dogs to attentively and excitedly listen to
+          their owner. Furthermore, it forces a positive perspective on training – finding ways to shape and reward
+          your dogs’ good behavior, not correct their bad behaviors.
+
+
+
+          How many dogs do you train at once?
+          Unlike many training facilities, our goal is not to train the “most” dogs. While our facility could
+          certainly support us doing so, we are much more concerned with ensuring that we have enough time in the day
+          to provide every dog with the individualized attention and training you are paying for. As a result we will
+          not accept more than 20 dogs in for their initial training at any given time.
+
+          Are all sizes of dogs together?
+          We accept dogs of all breeds, sizes, and ages. At any time we may have a 5lb Teacup Yorkie to a 200lb adult
+          Neapolitan Mastiff in for training or enrolled in the same class. Dogs that stay with us for training are
+          generally kept in personality matched groups of 3 – 4 dogs. Size is a consideration in the equation, but
+          ultimately overall personality is the biggest piece of the puzzle when we are selecting social groups.
+
+          Are there any breeds you will not train?
+          No, we accept any dog, any breed, any size, any age, and any behavioral issue. Our years of experience with
+          all types and breeds of dogs has provided us with the knowledge and tools to train all dogs regardless of
+          breed.
+
+          Are there any behaviors which you will not work with?
+          We are one of the few training facilities in the country that is equipped to deal with any and all
+          behavioral issues you may be dealing with. All we ask is that you are open and honest with us about your
+          dogs’ behavioral history so we know what problems we need to work on.
+          Do you accept dogs of all ages?
+          All fully vaccinated dogs are welcome at The Canine Club of Chicago. For puppies this usually means around
+          16 weeks of age.
+
+          Dog Training Program
+          What are the benefits of having my dog stay with you during training?
+          Having your dog trained at our facility helps to maximize the rate at which they are able to learn.
+          First and foremost, our training program provides them with a highly structured and consistent environment
+          where they can easily absorb the training.
+          When staying with us, we are able to better observe their typical behavior patterns, and determine an
+          appropriate method of reaching your training goals.
+          You get a break from the “chaos” and allow us to bring you back a dog which is fun and manageable to be
+          around.
+          We have the ability to run them through all different sorts of scenarios on a daily basis, allowing a wider
+          range of training options.
+          If you do the training at your facility, is my dog still going to listen at home?
+          Of course. While with us, we give your dog a crash course in obedient behavior and how to respond properly
+          to specific commands and situations. That is why, when we bring your dog home, we spend time showing you how
+          to achieve the same results with your dog. With the included private lessons you are able to refine and
+          perfect your skills and have the dog you imagined when you signed up for training.
+          Where will my dog be kept while training with you?
+          Throughout the day and evening your dog will rotate between the training areas, an outside kennel run, and
+          their assigned crate. They will be given ample time to run around, stretch their legs, and go to the
+          bathroom. We also frequently bring dogs with us if we need to leave the facility for any reason.
+          Why does my dog have to stay in a crate at night?
+          Crate training, and having your dog feel comfortable, safe, and happy in their crate is an integral part of
+          our training program at Hunter Canine. In this sense, having your dog stay in their crate at night, allows
+          us to continue your dogs training – even when they are tired from a full day of learning.
+          Additionally, we find that crating dogs during the evening helps to minimize their stress during their stay.
+          In particular, by eliminating the noise associated with “fence fighting” that is common in facilities that
+          use kennels at night, your dog is able to relax more comfortably, and sleep throughout the evening.
+          How much time will my dog spend out of their crate a day?
+          The majority! Between training time, time in their runs, and other time out with us, your dog will be busy
+          for a large part of the day. In fact, their brains will be so overloaded and tired they will be happy to be
+          able to go in their crates and take a nap or sleep for the evening!
+          My dog has medical issues and needs to be given medication. Can you administer that?
+          We are more than happy to administer medications for any of the dogs training with us, free of charge.
+          What will my dog be eating when in training?
+          We require that owners provide a bag of their dogs’ regular food during training. This helps your dog avoid
+          any intestinal issues that may result from a sudden change in their diet, and helps us to keep costs down.
+          Can you train my dog in another language?
+          We can train your dog in any language you choose. If you have specific commands that you would like your dog
+          trained with, please inform us at check in and we will happily meet your request.
+          How do I find out how my dog is doing while in training?
+          If you have specific concerns during their training program, or would like a quick update on progress,
+          please call, text or email us and we will provide you with picture and video updates upon request. We also
+          allow scheduled visits during our training camps so that you can come and spend quality time with your dog.
+          What can I do to prepare my dog for his or her training retreat?
+          To ensure that your dog is ready for their retreat, please make sure you have the following ready for their
+          drop-off:
+          Veterinary records, which show they are up to date on their shots (see below)
+          Their food and any specific instructions for feeding.
+          We recommend providing 1.5x the amount you would normally feed over the course of their stay.
+          Any medications your dog may need and instructions for administration.
+          What types of shots or vaccinations must my dog have?
+          While there is considerable debate as to proper vaccination schedules for dogs, the health of the dogs in
+          our care is of our primary concern. As a result we require proof that your dog is current on the following
+          vaccines to be enrolled in a training retreat.
+          Rabies
+          Bordetella
+          Distemper/Parvo (commonly referred to as DHP, DHPP, 5-in-1 or 7-in-1)
+          Canine Influenza H3N2
+          My dog is coming in for a training retreat, what time do I need to drop them off?
+          We will prearrange a time with you, that coincides with your busy schedule, and our training day so we have
+          the proper time to thoroughly cover everything associated with your dogs stay.
+          My dog is coming home from a training retreat, what time will you be there?
+          In home transition times will be determined by mutual agreement only, and are scheduled the day you drop
+          your dog off.
+          Payment Methods/Refunds
+          Once I place a deposit, can I cancel or request a refund?
+          Deposits are nonrefundable unless we are for some reason unable to accept your dog for training. If you are
+          unable to leave your dog with us when initially planned, we will happily reschedule their stay.
+          What forms of payment do you accept?
+          We accept cash, checks, and all major credit cards as well as Zelle, Venmo, Paypal, and Cash App. Please
+          note that we charge an additional 3% service fee for any debit or credit card transactions.
+
+        <h6>What is your refund policy?</h6>
+        <p>
+          We have a no refund policy, we guarantee all of our training services and have never come across a dog we
+          are not able to train. We may make exceptions and offer a refund under special circumstances in which
+          processing can take 3-5 weeks.
+        </p>
+
+
+        </p>
+      </div>
+  </div>
+  </section>
+
+  <footer
+    class="page_footer ds s-pb-35 s-pt-60 s-pb-md-70 s-pt-md-90 s-pb-xl-130 s-pt-xl-160 c-mb-20 c-gutter-30 container-px-0">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 text-center text-lg-left animate" data-animation="fadeInUp">
+
+          <div class="widget widget_icons_list">
+            <h3 class="widget-title">Our Contact Info</h3>
+
+            <ul class="mb-10">
+              <li class="icon-inline">
+                <div class="icon-styled icon-top color-main4 fs-14">
+                  <i class="fa fa-envelope"></i>
+                </div>
+                <a href="#">info@canineclubchicago.com</a>
+              </li>
+              <li class="icon-inline">
+                <div class="icon-styled icon-top color-main4 fs-14">
+                  <i class="fa fa-phone"></i>
+                </div>
+                <p>(630) 999 5222</p>
+              </li>
+              <li class="icon-inline">
+                <div class="icon-styled icon-top color-main4 fs-14">
+                  <i class="fa fa-clock-o"></i>
+                </div>
+                <p>Working hours: 7AM - 10PM </p>
+              </li>
+            </ul>
+
+            <span class="social-icons">
+              <a target="_onblank"
+                href="https://www.google.com/maps/place/The+Canine+Club+of+Chicago/@41.8913906,-87.6169857,17z/data=!3m1!4b1!4m12!1m6!3m5!1s0x880fadc9773b6a33:0xc8dfb571099cf7a7!2sThe+Canine+Club+of+Chicago!8m2!3d41.8913906!4d-87.6147917!3m4!1s0x880fadc9773b6a33:0xc8dfb571099cf7a7!8m2!3d41.8913906!4d-87.6147917"
+                class="fa fa-google rounded-icon color-bg-icon footer-icon" title="google"></a>
+              <a target="_onblank" href="https://www.facebook.com/TheCanineClubofChicago/"
+                class="fa fa-facebook rounded-icon color-bg-icon footer-icon" title="facebook"></a>
+              <a target="_onblank" href="https://www.instagram.com/thecanineclubofchicago/"
+                class="fa fa-instagram rounded-icon color-bg-icon footer-icon" title="instagram"></a>
+            </span>
+          </div>
+        </div>
+
+        <div class="col-lg-6 text-center text-lg-left animate" data-animation="fadeInUp">
+          <div class="widget mb-0">
+
+            <h3 class="widget-title">Newsletter</h3>
+
+            <p class="color-font mb-3">
+              Subscribe to our newsletter to be updated on deals and promotions!
+            </p>
+
+            <form class="signup" action="/">
+
+              <input id="mailchimp_email" name="email" type="email"
+                class="form-control mailchimp_email text-center text-lg-left" placeholder="Enter Email Address">
+
+              <button type="submit" class="btn btn-maincolor mt-30">
+                Subscribe
+              </button>
+              <div class="response"></div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <section class="page_copyright ds s-py-5">
+    <div class="container border-top-color">
+      <div class="row align-items-center ">
+        <div class="divider-20 d-none d-lg-block"></div>
+        <div class="divider-10 d-none d-md-block d-lg-none"></div>
+        <div class="col-md-12 text-center">
+          <p>&copy; Copyright <span class="copyright_year">2018</span> All Rights Reserved</p>
+        </div>
+        <div class="divider-20 d-none d-lg-block"></div>
+        <div class="divider-10 d-none d-md-block d-lg-none"></div>
+      </div>
+    </div>
+  </section>
+
+
+</div><!-- eof #box_wrapper -->
+</div><!-- eof #canvas -->
