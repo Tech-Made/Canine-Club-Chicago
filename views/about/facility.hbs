@@ -1,279 +1,280 @@
 <div class="preloader">
-    <div class="preloader_image pulse"></div>
+  <div class="preloader_image pulse"></div>
 </div>
 
 <!-- search modal -->
 <div class="modal" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal">
-    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
-    </button>
-    <div class="widget widget_search">
-        <form method="get" class="searchform search-form" action="/">
-            <div class="form-group">
-                <input type="text" value="" name="search" class="form-control" placeholder="Search keyword"
-                    id="modal-search-input">
-            </div>
-            <button type="submit"></button>
-        </form>
-    </div>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <div class="widget widget_search">
+    <form method="get" class="searchform search-form" action="/">
+      <div class="form-group">
+        <input type="text" value="" name="search" class="form-control" placeholder="Search keyword"
+          id="modal-search-input">
+      </div>
+      <button type="submit"></button>
+    </form>
+  </div>
 </div>
 
 <!-- Unyson messages modal -->
 <div class="modal fade" tabindex="-1" role="dialog" id="messages_modal">
-    <div class="fw-messages-wrap ls p-normal">
-        <!-- Uncomment this UL with LI to show messages in modal popup to your user: -->
-        <!--
+  <div class="fw-messages-wrap ls p-normal">
+    <!-- Uncomment this UL with LI to show messages in modal popup to your user: -->
+    <!--
     <ul class="list-unstyled">
         <li>Message To User</li>
     </ul>
     -->
 
-    </div>
+  </div>
 </div><!-- eof .modal -->
 
 <!-- wrappers for visual page editor and boxed version of template -->
 <div id="canvas">
-    <div id="box_wrapper">
+  <div id="box_wrapper">
 
-        <!-- template sections -->
-
-
-        <section class="page_toplogo ls s-pt-45 s-pb-40 d-none d-lg-block">
-            <div class="container-fluid">
-                <div class="row align-items-center">
-                    <div class="col-lg-3">
-                        <div class="">
-                            <a href="./" class="logo">
-                                {{!-- <img src="images/logo.png" alt="img"> --}}
-                                <h3>The Canine Club of Chicago</h3>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="d-flex justify-content-center">
-                            <div class="media header-media">
-                                <div class="media-body">
-                                    <h4>
-                                        email us
-                                    </h4>
-                                    <p>
-                                        <a href="mailto:info@canineclubchicago.com">info@canineclubchicago.com</a>
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="media header-media">
-                                <div class="media-body">
-                                    <h4>
-                                        working hours
-                                    </h4>
-                                    <p>
-                                        7AM - 10PM
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="media header-media">
-                                <div class="media-body">
-                                    <h4>
-                                        call us
-                                    </h4>
-                                    <p>
-                                        <a href="tel:630-999-5222">630-999-5222</a>
-                                    </p>
-                                </div>
-                            </div>
+    <!-- template sections -->
 
 
-                        </div>
-                    </div>
-                    <div class="col-lg-3 text-right">
-                        <a href="/contact" class="btn btn-maincolor">Book Now</a>
-                    </div>
-
-                </div>
+    <section class="page_toplogo ls s-pt-45 s-pb-40 d-none d-lg-block">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-lg-3">
+            <div class="">
+              <a href="./" class="logo">
+                {{!-- <img src="images/logo.png" alt="img"> --}}
+                <h3>The Canine Club of Chicago</h3>
+              </a>
             </div>
-        </section>
-        <!--eof topline-->
-        <!-- header with two Bootstrap columns - left for logo and right for navigation and includes (search, social icons, additional links and buttons etc -->
-        <header class="page_header ls bg-maincolor4 main-style">
-            <div class="container-fluid">
-                <div class="row align-items-center">
-                    <div class="col-xl-12">
-                        <div class="nav-wrap header-main">
-                            <a href="./" class="logo logo-ds">
-                                {{!-- <img src="images/logo_ds.png" alt="img"> --}}
-                                <h5>The Canine Club of Chicago</h5>
-                            </a>
-                            <!-- main nav start -->
-                            <nav class="top-nav">
-                                <ul class="nav sf-menu">
-
-                                    <!-- sof pages -->
-                                    <li>
-                                        <a href="/">Home</a>
-                                    </li>
-
-                                    <li class="active">
-                                        <a>About</a>
-                                        <ul>
-                                            <li class="active">
-                                                <a href="/facility">Our Facility</a>
-                                            </li>
-                                            <li>
-                                                <a href="/mission">Our Mission</a>
-                                            </li>
-                                            <li>
-                                                <a href="/team">Our Team</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-
-                                    <li>
-                                        <a>Training</a>
-                                        <ul>
-                                            <li>
-                                                <a href="/bootcamp">Dog Training Camp</a>
-                                            </li>
-                                            <li>
-                                                <a href="/aggressioncamp">Aggression Training</a>
-                                            </li>
-                                            <li>
-                                                <a href="/privatelesson">Private Dog Training</a>
-                                            </li>
-                                            <li>
-                                                <a href="/privatelessonbundle">Private Training Bundle</a>
-                                            </li>
-                                            <li>
-                                                <a href="/servicedogtraining">Service Dog Training</a>
-                                            </li>
-                                            <li>
-                                                <a href="/therapydogtraining">Therapy Dog Training</a>
-                                            </li>
-                                            <li>
-                                                <a href="/protectiondogtraining">Protection Dog Training</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-
-                                    <li>
-                                        <a href="/boarding">Boarding</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="/contact">Contact</a>
-                                    </li>
-
-                                    <!-- eof pages -->
-
-
-                                </ul>
-
-
-                            </nav>
-                            <!-- eof main nav -->
-                            <ul class="top-includes d-none d-xl-block">
-                                <li>
-                                    <span class="social-icons">
-
-                                        <a target="_onblank"
-                                            href="https://www.google.com/maps/place/The+Canine+Club+of+Chicago/@41.8913906,-87.6169857,17z/data=!3m1!4b1!4m12!1m6!3m5!1s0x880fadc9773b6a33:0xc8dfb571099cf7a7!2sThe+Canine+Club+of+Chicago!8m2!3d41.8913906!4d-87.6147917!3m4!1s0x880fadc9773b6a33:0xc8dfb571099cf7a7!8m2!3d41.8913906!4d-87.6147917"
-                                            class="fa fa-google border-icon rounded-icon color-icon" title="google"></a>
-                                        <a target="_onblank" href="https://www.facebook.com/TheCanineClubofChicago/"
-                                            target="_onblank" href="https://www.facebook.com/TheCanineClubofChicago/"
-                                            class="fa fa-facebook border-icon rounded-icon color-icon"
-                                            title="facebook"></a>
-                                        <a target="_onblank" href="https://www.instagram.com/thecanineclubofchicago/"
-                                            class="fa fa-instagram border-icon rounded-icon color-icon"
-                                            title="instagram"></a>
-
-                                    </span>
-                                </li>
-                            </ul>
-                        </div>
-
-                    </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="d-flex justify-content-center">
+              <div class="media header-media">
+                <div class="media-body">
+                  <h4>
+                    email us
+                  </h4>
+                  <p>
+                    <a href="mailto:info@canineclubchicago.com">info@canineclubchicago.com</a>
+                  </p>
                 </div>
-            </div>
-            <!-- header toggler -->
-            <span class="toggle_menu"><span></span></span>
-        </header>
+              </div>
 
-        <section class="page_title ls  s-py-5">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-md-12 text-center">
-                        <h1>Locations</h1>
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item">
-                                <a href="./">Home</a>
-                            </li>
-                            <li class="breadcrumb-item">
-                                <a href="#">About</a>
-                            </li>
-                            <li class="breadcrumb-item active">
-                                Locations
-                            </li>
-                        </ol>
-                    </div>
-
+              <div class="media header-media">
+                <div class="media-body">
+                  <h4>
+                    working hours
+                  </h4>
+                  <p>
+                    7AM - 10PM
+                  </p>
                 </div>
+              </div>
+
+              <div class="media header-media">
+                <div class="media-body">
+                  <h4>
+                    call us
+                  </h4>
+                  <p>
+                    <a href="tel:630-999-5222">630-999-5222</a>
+                  </p>
+                </div>
+              </div>
+
+
             </div>
-        </section>
+          </div>
+          <div class="col-lg-3 text-right">
+            <a href="/contact" class="btn btn-maincolor">Book Now</a>
+          </div>
 
-        <section class="ls s-py-60 s-py-md-90 s-py-xl-160 c-gutter-60 service">
-            <div class="container">
-                <div class="row">
+        </div>
+      </div>
+    </section>
+    <!--eof topline-->
+    <!-- header with two Bootstrap columns - left for logo and right for navigation and includes (search, social icons, additional links and buttons etc -->
+    <header class="page_header ls bg-maincolor4 main-style">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-xl-12">
+            <div class="nav-wrap header-main">
+              <a href="./" class="logo logo-ds">
+                {{!-- <img src="images/logo_ds.png" alt="img"> --}}
+                <h5>The Canine Club of Chicago</h5>
+              </a>
+              <!-- main nav start -->
+              <nav class="top-nav">
+                <ul class="nav sf-menu">
 
-                    <div class="col-lg-8">
-                        <div>
-                            <div class="item-media">
-                                <img src="images/facilitydog.jpg" alt="img">
-                            </div>
-                        </div>
-                        <div class="item-content box-shadow">
+                  <!-- sof pages -->
+                  <li>
+                    <a href="/">Home</a>
+                  </li>
 
-                            <h4 class="entry-title">The Canine Club of Chicago</h4>
+                  <li class="active">
+                    <a>About</a>
+                    <ul>
+                      <li class="active">
+                        <a href="/facility">Our Facility</a>
+                      </li>
+                      <li>
+                        <a href="/mission">Our Mission</a>
+                      </li>
+                      <li>
+                        <a href="/team">Our Team</a>
+                      </li>
+                      <li>
+                        <a href="/faq">FAQ</a>
+                      </li>
+                    </ul>
+                  </li>
 
-                            <p>
-                                Our company is partnered with establishments that provide and use a beautiful state of
-                                the art facility that is over 10,000 square feet, open year round 365 days! As you may
-                                know Chicago has proven to be well known for its extreme adverse weather conditions; at
-                                times making it a challenge to relieve your pet and even more so to provide them with
-                                adequate exercise. The facilities we use have built a hyper clean, climate-controlled
-                                environment, with premier individual boarding suites. Each dog that we take in is
-                                provided with a <a href='http://www.kuranda.com/' target="_blank">Kuranda Bed</a> to
-                                sleep on if they wish. These durable, raised beds are
-                                perfect for lounging on and most dogs love them. Suites are also equipped with vertical
-                                sliding doors dividing the inside and outside runs.
-                            </p>
+                  <li>
+                    <a>Training</a>
+                    <ul>
+                      <li>
+                        <a href="/bootcamp">Dog Training Camp</a>
+                      </li>
+                      <li>
+                        <a href="/aggressioncamp">Aggression Training</a>
+                      </li>
+                      <li>
+                        <a href="/privatelesson">Private Dog Training</a>
+                      </li>
+                      <li>
+                        <a href="/privatelessonbundle">Private Training Bundle</a>
+                      </li>
+                      <li>
+                        <a href="/servicedogtraining">Service Dog Training</a>
+                      </li>
+                      <li>
+                        <a href="/therapydogtraining">Therapy Dog Training</a>
+                      </li>
+                      <li>
+                        <a href="/protectiondogtraining">Protection Dog Training</a>
+                      </li>
+                    </ul>
+                  </li>
 
-                            <p>
-                                Every dog requires an appropriate amount of daily exercise. The exertion of energy is
-                                vital to a dogs health and key in many of their behaviors. To ensure dogs are able to
-                                receive a proper level of exercise on days the weather does permit them to go outside;
-                                there is an open gym at the facility, equipped with superior agility matting for
-                                unmatched traction & comfort. The premium rubberized agility contact equipment keeps
-                                dogs safe and able to enjoy themselves while being indoors.
-                            </p>
+                  <li>
+                    <a href="/boarding">Boarding</a>
+                  </li>
 
-                            <p>
-                                Each facility that we are partnered with has real life living quarters and a trainer
-                                that stays on site with the dogs at all times! We train dogs in various different
-                                environments and settings to give them maximum exposure to different scenarios and
-                                distractions. We will work with dogs at the facilities as well as out in public areas
-                                such as parks, neighborhoods, stores and more. We also take dogs into realistic home
-                                environments and settings to provide them with superior training and solve any behavior
-                                issues.
-                            </p>
+                  <li>
+                    <a href="/contact">Contact</a>
+                  </li>
 
-                            <p>
-                                We service all of the Chicagoland area and surrounding suburbs! We are partnered with 2
-                                facilities that we use to house our dogs that are located in Chicago and in the suburbs!
-                            </p>
+                  <!-- eof pages -->
 
-                            {{!-- <h5 class="mb-15">Our Facility Offers:</h5>
+
+                </ul>
+
+
+              </nav>
+              <!-- eof main nav -->
+              <ul class="top-includes d-none d-xl-block">
+                <li>
+                  <span class="social-icons">
+
+                    <a target="_onblank"
+                      href="https://www.google.com/maps/place/The+Canine+Club+of+Chicago/@41.8913906,-87.6169857,17z/data=!3m1!4b1!4m12!1m6!3m5!1s0x880fadc9773b6a33:0xc8dfb571099cf7a7!2sThe+Canine+Club+of+Chicago!8m2!3d41.8913906!4d-87.6147917!3m4!1s0x880fadc9773b6a33:0xc8dfb571099cf7a7!8m2!3d41.8913906!4d-87.6147917"
+                      class="fa fa-google border-icon rounded-icon color-icon" title="google"></a>
+                    <a target="_onblank" href="https://www.facebook.com/TheCanineClubofChicago/" target="_onblank"
+                      href="https://www.facebook.com/TheCanineClubofChicago/"
+                      class="fa fa-facebook border-icon rounded-icon color-icon" title="facebook"></a>
+                    <a target="_onblank" href="https://www.instagram.com/thecanineclubofchicago/"
+                      class="fa fa-instagram border-icon rounded-icon color-icon" title="instagram"></a>
+
+                  </span>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- header toggler -->
+      <span class="toggle_menu"><span></span></span>
+    </header>
+
+    <section class="page_title ls  s-py-5">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-12 text-center">
+            <h1>Locations</h1>
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <a href="./">Home</a>
+              </li>
+              <li class="breadcrumb-item">
+                <a href="#">About</a>
+              </li>
+              <li class="breadcrumb-item active">
+                Locations
+              </li>
+            </ol>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="ls s-py-60 s-py-md-90 s-py-xl-160 c-gutter-60 service">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-8">
+            <div>
+              <div class="item-media">
+                <img src="images/facilitydog.jpg" alt="img">
+              </div>
+            </div>
+            <div class="item-content box-shadow">
+
+              <h4 class="entry-title">The Canine Club of Chicago</h4>
+
+              <p>
+                Our company is partnered with establishments that provide and use a beautiful state of
+                the art facility that is over 10,000 square feet, open year round 365 days! As you may
+                know Chicago has proven to be well known for its extreme adverse weather conditions; at
+                times making it a challenge to relieve your pet and even more so to provide them with
+                adequate exercise. The facilities we use have built a hyper clean, climate-controlled
+                environment, with premier individual boarding suites. Each dog that we take in is
+                provided with a <a href='http://www.kuranda.com/' target="_blank">Kuranda Bed</a> to
+                sleep on if they wish. These durable, raised beds are
+                perfect for lounging on and most dogs love them. Suites are also equipped with vertical
+                sliding doors dividing the inside and outside runs.
+              </p>
+
+              <p>
+                Every dog requires an appropriate amount of daily exercise. The exertion of energy is
+                vital to a dogs health and key in many of their behaviors. To ensure dogs are able to
+                receive a proper level of exercise on days the weather does permit them to go outside;
+                there is an open gym at the facility, equipped with superior agility matting for
+                unmatched traction & comfort. The premium rubberized agility contact equipment keeps
+                dogs safe and able to enjoy themselves while being indoors.
+              </p>
+
+              <p>
+                Each facility that we are partnered with has real life living quarters and a trainer
+                that stays on site with the dogs at all times! We train dogs in various different
+                environments and settings to give them maximum exposure to different scenarios and
+                distractions. We will work with dogs at the facilities as well as out in public areas
+                such as parks, neighborhoods, stores and more. We also take dogs into realistic home
+                environments and settings to provide them with superior training and solve any behavior
+                issues.
+              </p>
+
+              <p>
+                We service all of the Chicagoland area and surrounding suburbs! We are partnered with 2
+                facilities that we use to house our dogs that are located in Chicago and in the suburbs!
+              </p>
+
+              {{!-- <h5 class="mb-15">Our Facility Offers:</h5>
                             <ul class="list-styled">
                                 <li>Housebreaking</li>
                                 <li>Pulling on the leash</li>
@@ -283,131 +284,129 @@
                                 <li>Nipping & mouthing</li>
                             </ul> --}}
 
-                        </div>
-                        <div class="row mt-30 c-gutter-30">
-
-                            <div class="col-xl-12">
-                                <blockquote class="testimonial">
-                                    <h5>Eder Renteria</h5>
-                                    <p class="type color-main">
-                                        client
-                                    </p>
-                                    <img src="images/person4.jpg" alt="img">
-                                    <p>
-                                        The facility smells fresh and looks very clean! I boarded both of my dogs here
-                                        for 5 days and was given picture and video updates every day! My dogs had a
-                                        blast in play groups and made a ton of friends, they absolutely loved being
-                                        there! I will definitely be using them for boarding again!
-                                    </p>
-                                </blockquote>
-                            </div>
-                        </div>
-
-                    </div><!-- .col-* -->
-
-
-                    <div class="col-lg-4">
-
-                        <div class="widget widget_archive mb-60">
-                            <h3 class="widget-title mb-20">Our Locations</h3>
-
-                            <p>5750 N Tripp Ave. Chicago, IL 60646</p>
-                            <p>24 W 118 Saint Charles Rd. Carol Stream, IL 60188</p>
-
-                            <p>Any questions? <a href='/contact'>Contact us here.</a></p>
-
-                            <a href='/contact'><button>Book Us</button></a>
-                        </div>
-                    </div>
-                </div>
             </div>
-        </section>
+            <div class="row mt-30 c-gutter-30">
 
-        <footer
-            class="page_footer ds s-pb-35 s-pt-60 s-pb-md-70 s-pt-md-90 s-pb-xl-130 s-pt-xl-160 c-mb-20 c-gutter-30 container-px-0">
-
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 text-center text-lg-left animate" data-animation="fadeInUp">
-
-                        <div class="widget widget_icons_list">
-                            <h3 class="widget-title">Our Contact Info</h3>
-
-                            <ul class="mb-10">
-                                <li class="icon-inline">
-                                    <div class="icon-styled icon-top color-main4 fs-14">
-                                        <i class="fa fa-envelope"></i>
-                                    </div>
-                                    <a href="#">info@canineclubchicago.com</a>
-                                </li>
-                                <li class="icon-inline">
-                                    <div class="icon-styled icon-top color-main4 fs-14">
-                                        <i class="fa fa-phone"></i>
-                                    </div>
-                                    <p>(630) 999 5222</p>
-                                </li>
-                                <li class="icon-inline">
-                                    <div class="icon-styled icon-top color-main4 fs-14">
-                                        <i class="fa fa-clock-o"></i>
-                                    </div>
-                                    <p>Working hours: 7AM - 10PM </p>
-                                </li>
-                            </ul>
-
-                            <span class="social-icons">
-                                <a target="_onblank"
-                                    href="https://www.google.com/maps/place/The+Canine+Club+of+Chicago/@41.8913906,-87.6169857,17z/data=!3m1!4b1!4m12!1m6!3m5!1s0x880fadc9773b6a33:0xc8dfb571099cf7a7!2sThe+Canine+Club+of+Chicago!8m2!3d41.8913906!4d-87.6147917!3m4!1s0x880fadc9773b6a33:0xc8dfb571099cf7a7!8m2!3d41.8913906!4d-87.6147917"
-                                    class="fa fa-google rounded-icon color-bg-icon footer-icon" title="google"></a>
-                                <a target="_onblank" href="https://www.facebook.com/TheCanineClubofChicago/"
-                                    class="fa fa-facebook rounded-icon color-bg-icon footer-icon" title="facebook"></a>
-                                <a target="_onblank" href="https://www.instagram.com/thecanineclubofchicago/"
-                                    class="fa fa-instagram rounded-icon color-bg-icon footer-icon"
-                                    title="instagram"></a>
-                            </span>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6 text-center text-lg-left animate" data-animation="fadeInUp">
-                        <div class="widget mb-0">
-
-                            <h3 class="widget-title">Newsletter</h3>
-
-                            <p class="color-font mb-3">
-                                Subscribe to our newsletter to be updated on deals and promotions!
-                            </p>
-
-                            <form class="signup" action="/">
-
-                                <input id="mailchimp_email" name="email" type="email"
-                                    class="form-control mailchimp_email text-center text-lg-left"
-                                    placeholder="Enter Email Address">
-
-                                <button type="submit" class="btn btn-maincolor mt-30">
-                                    Subscribe
-                                </button>
-                                <div class="response"></div>
-                            </form>
-
-                        </div>
-                    </div>
-                </div>
+              <div class="col-xl-12">
+                <blockquote class="testimonial">
+                  <h5>Eder Renteria</h5>
+                  <p class="type color-main">
+                    client
+                  </p>
+                  <img src="images/person4.jpg" alt="img">
+                  <p>
+                    The facility smells fresh and looks very clean! I boarded both of my dogs here
+                    for 5 days and was given picture and video updates every day! My dogs had a
+                    blast in play groups and made a ton of friends, they absolutely loved being
+                    there! I will definitely be using them for boarding again!
+                  </p>
+                </blockquote>
+              </div>
             </div>
-        </footer>
 
-        <section class="page_copyright ds s-py-5">
-            <div class="container border-top-color">
-                <div class="row align-items-center ">
-                    <div class="divider-20 d-none d-lg-block"></div>
-                    <div class="divider-10 d-none d-md-block d-lg-none"></div>
-                    <div class="col-md-12 text-center">
-                        <p>&copy; Copyright <span class="copyright_year">2018</span> All Rights Reserved</p>
-                    </div>
-                    <div class="divider-20 d-none d-lg-block"></div>
-                    <div class="divider-10 d-none d-md-block d-lg-none"></div>
-                </div>
+          </div><!-- .col-* -->
+
+
+          <div class="col-lg-4">
+
+            <div class="widget widget_archive mb-60">
+              <h3 class="widget-title mb-20">Our Locations</h3>
+
+              <p>5750 N Tripp Ave. Chicago, IL 60646</p>
+              <p>24 W 118 Saint Charles Rd. Carol Stream, IL 60188</p>
+
+              <p>Any questions? <a href='/contact'>Contact us here.</a></p>
+
+              <a href='/contact'><button>Book Us</button></a>
             </div>
-        </section>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      class="page_footer ds s-pb-35 s-pt-60 s-pb-md-70 s-pt-md-90 s-pb-xl-130 s-pt-xl-160 c-mb-20 c-gutter-30 container-px-0">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 text-center text-lg-left animate" data-animation="fadeInUp">
+
+            <div class="widget widget_icons_list">
+              <h3 class="widget-title">Our Contact Info</h3>
+
+              <ul class="mb-10">
+                <li class="icon-inline">
+                  <div class="icon-styled icon-top color-main4 fs-14">
+                    <i class="fa fa-envelope"></i>
+                  </div>
+                  <a href="#">info@canineclubchicago.com</a>
+                </li>
+                <li class="icon-inline">
+                  <div class="icon-styled icon-top color-main4 fs-14">
+                    <i class="fa fa-phone"></i>
+                  </div>
+                  <p>(630) 999 5222</p>
+                </li>
+                <li class="icon-inline">
+                  <div class="icon-styled icon-top color-main4 fs-14">
+                    <i class="fa fa-clock-o"></i>
+                  </div>
+                  <p>Working hours: 7AM - 10PM </p>
+                </li>
+              </ul>
+
+              <span class="social-icons">
+                <a target="_onblank"
+                  href="https://www.google.com/maps/place/The+Canine+Club+of+Chicago/@41.8913906,-87.6169857,17z/data=!3m1!4b1!4m12!1m6!3m5!1s0x880fadc9773b6a33:0xc8dfb571099cf7a7!2sThe+Canine+Club+of+Chicago!8m2!3d41.8913906!4d-87.6147917!3m4!1s0x880fadc9773b6a33:0xc8dfb571099cf7a7!8m2!3d41.8913906!4d-87.6147917"
+                  class="fa fa-google rounded-icon color-bg-icon footer-icon" title="google"></a>
+                <a target="_onblank" href="https://www.facebook.com/TheCanineClubofChicago/"
+                  class="fa fa-facebook rounded-icon color-bg-icon footer-icon" title="facebook"></a>
+                <a target="_onblank" href="https://www.instagram.com/thecanineclubofchicago/"
+                  class="fa fa-instagram rounded-icon color-bg-icon footer-icon" title="instagram"></a>
+              </span>
+            </div>
+          </div>
+
+          <div class="col-lg-6 text-center text-lg-left animate" data-animation="fadeInUp">
+            <div class="widget mb-0">
+
+              <h3 class="widget-title">Newsletter</h3>
+
+              <p class="color-font mb-3">
+                Subscribe to our newsletter to be updated on deals and promotions!
+              </p>
+
+              <form class="signup" action="/">
+
+                <input id="mailchimp_email" name="email" type="email"
+                  class="form-control mailchimp_email text-center text-lg-left" placeholder="Enter Email Address">
+
+                <button type="submit" class="btn btn-maincolor mt-30">
+                  Subscribe
+                </button>
+                <div class="response"></div>
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <section class="page_copyright ds s-py-5">
+      <div class="container border-top-color">
+        <div class="row align-items-center ">
+          <div class="divider-20 d-none d-lg-block"></div>
+          <div class="divider-10 d-none d-md-block d-lg-none"></div>
+          <div class="col-md-12 text-center">
+            <p>&copy; Copyright <span class="copyright_year">2018</span> All Rights Reserved</p>
+          </div>
+          <div class="divider-20 d-none d-lg-block"></div>
+          <div class="divider-10 d-none d-md-block d-lg-none"></div>
+        </div>
+      </div>
+    </section>
 
 
-    </div><!-- eof #box_wrapper -->
+  </div><!-- eof #box_wrapper -->
 </div><!-- eof #canvas -->
