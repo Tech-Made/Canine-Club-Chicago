@@ -2,13 +2,14 @@
 const mongoose = require("mongoose");
 assert = require("assert");
 
-const url = process.env.MONGODB_URI || "mongodb://localhost/canine-club-chicago";
+const url =
+  process.env.MONGODB_URI || "mongodb://localhost/canine-club-chicago";
 mongoose.Promise = global.Promise;
 
 mongoose.connect(
   url,
   // mongoose connection options :)
-  { useNewUrlParser: true},
+  { useNewUrlParser: true },
   function(err, db) {
     assert.equal(null, err);
     console.log("Connected successfully to database");
@@ -16,7 +17,10 @@ mongoose.connect(
     // db.close(); turn on for testing
   }
 );
-mongoose.connection.on("error", console.error.bind(console, "MongoDB connection Error:"));
+mongoose.connection.on(
+  "error",
+  console.error.bind(console, "MongoDB connection Error:")
+);
 mongoose.set("debug", true);
 
 module.exports = mongoose.connection;
