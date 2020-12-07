@@ -18,7 +18,7 @@ router.post("/contact", async (req, res) => {
   // user.save();
   try {
     await sgMail.send({
-      to: "asimzaidih@gmail.com",
+      to: "info@canineclubchicago.com",
       from: data.email,
       subject: "Website Contact Inquiry ",
       html: `
