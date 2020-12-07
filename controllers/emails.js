@@ -1,27 +1,27 @@
-const express = require('express');
+const express = require("express");
 const router = express.Router();
-const sgMail = require('@sendgrid/mail');
-const User = require('../models/User')
+const sgMail = require("@sendgrid/mail");
+const User = require("../models/User");
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
-router.post('/contact', async (req, res) => {
-    // req.body looks like:
-    // name
-    // phone
-    // number
-    // subject
-    // message
-    // SendGrid.sendContactFormEmail(req.body);
-    const data = req.body;
-    console.log('data:', data);
-    const user = new User(data);
-    user.save();
-    try {
-        await sgMail.send({
-            to: 'info@canineclubchicago.com',
-            from: data.email,
-            subject: 'Website Contact Inquiry ',
-            html: `
+router.post("/contact", async (req, res) => {
+  // req.body looks like:
+  // name
+  // phone
+  // number
+  // subject
+  // message
+  // SendGrid.sendContactFormEmail(req.body);
+  const data = req.body;
+  // console.log('data:', data);
+  // const user = new User(data);
+  // user.save();
+  try {
+    await sgMail.send({
+      to: "info@canineclubchicago.com",
+      from: data.email,
+      subject: "Website Contact Inquiry ",
+      html: `
             <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
             <html data-editor-version="2" class="sg-campaigns" xmlns="http://www.w3.org/1999/xhtml">
             <head>
@@ -185,22 +185,23 @@ router.post('/contact', async (req, res) => {
             </body>
             </html>
             `
-        });
-        res.status(200);
-        res.end();
-    } catch (e) {
-        res.status(500);
-        res.end();
-    } 
-    // res.redirect("/");
-})
+    });
+    res.status(200);
+    res.end();
+  } catch (e) {
+    res.status(500);
+    res.end();
+  }
+  // res.redirect("/");
+});
 
-router.post('/join'), async (req,  res) => {
+router.post("/join"),
+  async (req, res) => {
     const user = new User(req.body);
     await user.save();
     res.status(200);
     res.end();
-}
+  };
 
 // router.post('/contact_us', async (req,res) => {
 //     console.log('req.body:', req.body);
@@ -238,7 +239,7 @@ router.post('/join'), async (req,  res) => {
 //               img {-ms-interpolation-mode: bicubic;}
 //             </style>
 //             <![endif]-->
-        
+
 //             <style type="text/css">
 //               body, p, div {
 //                 font-family: lucida sans unicode,lucida grande,sans-serif;
@@ -317,7 +318,7 @@ router.post('/join'), async (req,  res) => {
 //               }
 //             </style>
 //             <!--user entered Head Start-->
-            
+
 //               <!--End Head user entered-->
 //           </head>
 //           <body>
@@ -339,7 +340,7 @@ router.post('/join'), async (req,  res) => {
 //                                   <table width="100%" cellpadding="0" cellspacing="0" border="0" style="width: 100%; max-width:600px;" align="center">
 //                                     <tr>
 //                                       <td role="modules-container" style="padding: 0px 0px 0px 0px; color: #000000; text-align: left;" bgcolor="#E1E3E4" width="100%" align="left">
-                                        
+
 //             <table class="module preheader preheader-hide" role="module" data-type="preheader" border="0" cellpadding="0" cellspacing="0" width="100%"
 //                     style="display: none !important; mso-hide: all; visibility: hidden; opacity: 0; color: transparent; height: 0; width: 0;">
 //               <tr>
@@ -348,7 +349,7 @@ router.post('/join'), async (req,  res) => {
 //                 </td>
 //               </tr>
 //             </table>
-          
+
 //             <table class="module" role="module" data-type="text" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;">
 //               <tr>
 //                 <td style="padding:24px 0px 0px 0px;line-height:22px;text-align:inherit;"
@@ -359,7 +360,7 @@ router.post('/join'), async (req,  res) => {
 //                 </td>
 //               </tr>
 //             </table>
-          
+
 //             <table class="module"
 //                     role="module"
 //                     data-type="divider"
@@ -390,7 +391,7 @@ router.post('/join'), async (req,  res) => {
 //                 </td>
 //               </tr>
 //             </table>
-          
+
 //             <table class="wrapper" role="module" data-type="image" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;">
 //               <tr>
 //                 <td style="font-size:6px;line-height:10px;padding:0px 0px 0px 0px;" valign="top" align="center">
@@ -398,7 +399,7 @@ router.post('/join'), async (req,  res) => {
 //                 </td>
 //               </tr>
 //             </table>
-          
+
 //             <table class="module" role="module" data-type="text" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;">
 //               <tr>
 //                 <td style="padding:18px 0px 18px 0px;line-height:22px;text-align:inherit;"
@@ -406,13 +407,13 @@ router.post('/join'), async (req,  res) => {
 //                     valign="top"
 //                     bgcolor="">
 //                     <div>Thank&#39;s your for contacting us. Someone from our team will respons back to you shortly!&nbsp;</div>
-        
+
 //         <div>&nbsp;</div>
-        
+
 //                 </td>
 //               </tr>
 //             </table>
-          
+
 //             <table class="module" role="module" data-type="text" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;">
 //               <tr>
 //                 <td style="padding:0px 0px 0px 0px;line-height:22px;text-align:inherit;"
@@ -420,7 +421,7 @@ router.post('/join'), async (req,  res) => {
 //                     valign="top"
 //                     bgcolor="">
 //                     <div style="text-align: right;"><span style="color: rgb(0, 0, 0); font-family: &quot;lucida sans unicode&quot;, &quot;lucida grande&quot;, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; background-color: rgb(225, 227, 228);">- Credit Swag</span></div>
-        
+
 //                 </td>
 //               </tr>
 //             </table>
@@ -447,9 +448,8 @@ router.post('/join'), async (req,  res) => {
 //         </html>
 //         `
 //     });
-//     console.log('mail sent');    
+//     console.log('mail sent');
 //     return res.json('Email Sent');
 // });
-
 
 module.exports = router;
