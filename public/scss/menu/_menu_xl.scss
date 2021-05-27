@@ -7,25 +7,23 @@
   align-items: center;
   justify-content: space-between;
 
-
-  @media(min-width: 320px) and (max-width: 1250px) {
+  @media (min-width: 320px) and (max-width: 1250px) {
     //flex-direction: column;
     //align-items: flex-start;
     //height: 120px;
-
   }
   //header includes that goes right after menu and before top-includes
   & > .top-nav + *:not(.top-includes) {
-
     padding-left: 30px;
     padding-right: 30px;
   }
 }
 
 /* Desktop menu - (min 1200px) styles */
-@media(min-width: 1200px) {
+@media (min-width: 1200px) {
   //nav .top-nav - wrapper for ul.nav.sf-menu
   .top-nav {
+    width: 100%;
     position: relative;
     flex-grow: 10;
     flex-wrap: nowrap;
@@ -47,7 +45,8 @@
   .sf-menu {
     display: block;
   }
-  .sf-menu, .sf-menu ul {
+  .sf-menu,
+  .sf-menu ul {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -82,14 +81,14 @@
     text-decoration: none;
     // /* IE7 */
     zoom: 1;
-    transition-property: color, background-color, border-color, padding-top, padding-bottom;
-    font-family: 'Montserrat', sans-serif;
+    transition-property: color, background-color, border-color, padding-top,
+      padding-bottom;
+    font-family: "Montserrat", sans-serif;
     font-size: 14px;
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 0.8px;
     line-height: 30px;
-
   }
 
   .sf-menu li {
@@ -104,19 +103,19 @@
     //inline-block for easy change menu items alignment to right, center or left
     display: inline-block;
     position: relative;
-    &:last-child{
-      & > a{
-        &::before{
+    &:last-child {
+      & > a {
+        &::before {
           content: none;
         }
       }
     }
   }
 
-  .main-style{
+  .main-style {
     .sf-menu > li:not(:last-child) > a {
-      &::before{
-        content: '';
+      &::before {
+        content: "";
         position: absolute;
         right: -28px;
         width: 3px;
@@ -129,8 +128,8 @@
         }
       }
     }
-    .sf-more-li > a:before{
-      content: none!important;
+    .sf-more-li > a:before {
+      content: none !important;
     }
   }
 
@@ -140,7 +139,6 @@
     padding: 33px 18px;
     margin: 0 4px;
     transition-duration: 0.15s;
-
 
     .affix & {
       padding-top: 33px;
@@ -174,7 +172,7 @@
 
   .nav-bordered {
     .sf-menu > li + li:before {
-      content: '';
+      content: "";
       width: 1px;
       position: absolute;
       left: -2px;
@@ -200,7 +198,6 @@
     .sf-menu > li.active > a {
       color: $colorMain;
     }
-
   }
   .ls {
     .sf-menu > li > a {
@@ -214,7 +211,7 @@
     .sf-menu > li + li:before {
       background-color: $borderColor;
     }
-    &.bg-maincolor4{
+    &.bg-maincolor4 {
       .sf-menu > li > a {
         color: $lightColor;
       }
@@ -222,7 +219,7 @@
       .sf-menu > li.active > a {
         border-bottom: 3px solid $lightColor;
       }
-      .search_modal_button:hover{
+      .search_modal_button:hover {
         color: $colorMain;
       }
     }
@@ -246,30 +243,29 @@
     background-color: $lightColor;
     min-width: 12em; /* allow long menu items to determine submenu width */
     *width: 10em; /* no auto sub width for IE7, see white-space comment below */
-    li{
-      &.mega-menu-col{
+    li {
+      &.mega-menu-col {
         padding: 0;
-        & > a{
+        & > a {
           border: none;
         }
       }
       padding-right: 35px;
       padding-left: 35px;
-      a{
+      a {
         padding-right: 0;
         padding-left: 0;
         display: block;
       }
     }
-    li:last-child:not(.mega-menu-col){
-      a{
+    li:last-child:not(.mega-menu-col) {
+      a {
         border-bottom: none;
       }
-      ul li{
-        a{
-
+      ul li {
+        a {
         }
-        &:last-child a{
+        &:last-child a {
           border-bottom: none;
         }
       }
@@ -282,7 +278,6 @@
 
   //.nav added to override .ds:not(.btn)
   .sf-menu.nav ul a {
-
     padding-left: 0;
     padding-right: 0;
   }
@@ -329,11 +324,10 @@
     //font-family: 'FontAwesome';
     //padding-left: 7px;
     //content: '\f105';
-
   }
 }
 
-@media(min-width: 1440px) {
+@media (min-width: 1440px) {
   .sf-menu a {
     padding: 11px 1.1em 10px;
   }
@@ -345,13 +339,13 @@
 }
 
 /* hidden menu items */
-@media(min-width: 1200px) {
-  .sf-menu .sf-xl-hidden {
-    display: none !important;
-  }
-}
+// @media(min-width: 1200px) {
+//   .sf-menu .sf-xl-hidden {
+//     display: none !important;
+//   }
+// }
 
-@media(max-width: 1199px) {
+@media (max-width: 1199px) {
   .sf-more-li {
     display: none;
   }

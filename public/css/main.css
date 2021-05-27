@@ -18879,6 +18879,7 @@ a img.aligncenter {
 
 @media (min-width: 1200px) {
 	.top-nav {
+        width: 100%;
 		align-items: center;
 		display: flex;
 		flex-grow: 10;
@@ -19173,11 +19174,11 @@ a img.aligncenter {
 
 /* hidden menu items */
 
-@media (min-width: 1200px) {
+/* @media (min-width: 1200px) {
 	.sf-menu .sf-xl-hidden {
 		display: none !important;
 	}
-}
+} */
 
 @media (max-width: 1199px) {
 	.sf-more-li {
