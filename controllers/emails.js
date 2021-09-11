@@ -1,10 +1,34 @@
 const express = require("express");
+const mailgun = require("mailgun-js");
 const router = express.Router();
-const sgMail = require("@sendgrid/mail");
-const User = require("../models/User");
-sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
-router.post("/contact", async (req, res) => {
+const mg = mailgun({
+  apiKey: process.env.MAILGUN_API_KEY,
+  domain: "sandbox90d7568bb54145598f0249d6e2af5f89.mailgun.org"
+});
+
+router.post("/contact", (req, res) => {
+  const { name, phone, email, subject, message } = req.body;
+
+  const data = {
+    from: "Excited User <me@samples.mailgun.org>",
+    to: "asimzaidih@gmail.com",
+    subject: "Hello",
+    text: "Testing some Mailgun awesomness!"
+  };
+
+  try {
+    mg.messages().send(data, (error, body) => {
+      console.log("sent?");
+      res.status(200);
+      res.end();
+    });
+  } catch (e) {
+    res.status(500).json({ message: "Internal Error" });
+  }
+});
+
+router.post("/old-contact", async (req, res) => {
   // req.body looks like:
   // name
   // phone
