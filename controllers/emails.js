@@ -4,17 +4,17 @@ const router = express.Router();
 
 const mg = mailgun({
   apiKey: process.env.MAILGUN_API_KEY,
-  domain: "sandbox90d7568bb54145598f0249d6e2af5f89.mailgun.org"
+  domain: "mg.canineclubchicago.com"
 });
 
 router.post("/contact", (req, res) => {
   const { name, phone, email, subject, message } = req.body;
 
   const data = {
-    from: "Excited User <me@samples.mailgun.org>",
+    from: `${name} <${email}>`,
     to: "asimzaidih@gmail.com",
-    subject: "Hello",
-    text: "Testing some Mailgun awesomness!"
+    subject: subject,
+    text: message
   };
 
   try {
