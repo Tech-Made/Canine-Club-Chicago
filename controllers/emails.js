@@ -14,7 +14,7 @@ router.post("/contact", (req, res) => {
     from: `${name} <${email}>`,
     to: "info@canineclubchicago.com",
     subject: subject,
-    text: message
+    text: `${message} --- PHONE NUMBER: ${phone}`
   };
 
   try {
