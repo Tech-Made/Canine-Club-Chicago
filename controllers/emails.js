@@ -13,7 +13,7 @@ router.post("/contact", (req, res) => {
   const data = {
     from: `${name} <${email}>`,
     to: "info@canineclubchicago.com",
-    subject: subject,
+    subject: `New Canine Club Message: ${subject}`,
     text: `${message} --- PHONE NUMBER: ${phone}`
   };
 
